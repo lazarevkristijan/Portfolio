@@ -1,27 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Press+Start+2P&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.mont {
+  font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.headerText {
+  font-family: 'Press Start 2P', 'Montserrat', sans-serif;
+  font-size: 50px;
+}
+
+.navText {
+  font-size: 30px;
+  font-variant: small-caps;
+}
+
+.sectionHeader {
+  font-size: 70px;
+}
+
+.text {
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
+.subSectionHeader {
+  font-size: 50px;
+  font-variant: small-caps;
+}
+
+.navbarColor {
+  background-color: #5d5e76;
+}
+
+.textColor {
+  color: #fff;
+}
+
+.backgroundColor {
+  background-color: #333f4c;
+}
+
+.horizontalLineColor {
+  color: #000;
+}
+
+.progressBarColor {
+  background-color: #59747b;
+}
+
+.footerColor {
+  background: linear-gradient(to bottom, #333f4c 30%, #000);
 }
