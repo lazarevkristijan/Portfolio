@@ -1,19 +1,12 @@
-NAVBAR
-
-HERO SECTION
-
 ABOUT SECTION - SHORT
 INCLUDING A DOWNLOADABLE CV PDF FILE
-
-PROJECTS SECTION
-
-SKILLS SECTION
-WITH SMALL CERTIFICATIONS SUBSECTION
-
-CONTACT SECTION
-
-FOOTER SECTION
 
 MAKE HEADERS NAMES INTO A REPETING FUNCTION
 
 MAKE PRIVACY POLICY AND TERMS OF USE
+
+
+make content stand out with shadows - make background and sides lighter colors so they blend out
+framer motion for animations
+
+make contacts as links to just click and redirect
