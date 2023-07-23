@@ -18,28 +18,8 @@
   font-variant: small-caps;
 }
 
-.headerText {
+.ps2p {
   font-family: 'Press Start 2P', 'Montserrat', sans-serif;
-  font-size: 50px;
-}
-
-.navText {
-  font-size: 30px;
-  font-variant: small-caps;
-}
-
-.sectionHeader {
-  font-size: 70px;
-}
-
-.text {
-  font-size: 20px;
-  font-variant: small-caps;
-}
-
-.subSectionHeader {
-  font-size: 50px;
-  font-variant: small-caps;
 }
 
 .navbarColor {

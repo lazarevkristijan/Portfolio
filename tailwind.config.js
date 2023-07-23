@@ -14,6 +14,14 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    screens: {
+      '2xl': { max: '1535px' },
+      xl: { max: '1220px' },
+      lg: { max: '1020px' },
+      md: { max: '820px' },
+      sm: { max: '620px' },
+      xs: { max: '420px' },
+    },
   },
   plugins: [],
 }

@@ -59,11 +59,11 @@ export const frontEndSkills = [
   },
   {
     name: 'react',
-    level: 'w-3/5',
+    level: 'w-2/3',
   },
   {
     name: 'next.js',
-    level: 'w-3/5',
+    level: 'w-2/3',
   },
   {
     name: 'typescript',
@@ -77,7 +77,7 @@ export const frontEndSkills = [
 
 export const backEndSkills = [
   {
-    name: 'node',
+    name: 'node.js',
     level: 'w-1/2',
   },
   {
@@ -85,7 +85,7 @@ export const backEndSkills = [
     level: 'w-1/2',
   },
   {
-    name: 'express',
+    name: 'express.js',
     level: 'w-1/2',
   },
 ]
@@ -97,7 +97,7 @@ export const designSkills = [
   },
   {
     name: 'illustrator',
-    level: 'w-4/5',
+    level: 'w-2/3',
   },
   {
     name: 'figma',
@@ -112,6 +112,8 @@ export const certifications = [
     issueDate: '06/2023',
     skillsLearnt: 'html/css/js/react/mongo/express',
     issuerLogo: '/udemy.png',
+    linkToCertification:
+      'https://www.udemy.com/certificate/UC-3dfb06f6-a5e1-475a-9589-3c1864d72bab/',
   },
   {
     name: 'the communication masterclass',
@@ -119,6 +121,8 @@ export const certifications = [
     issueDate: '06/2023',
     skillsLearnt: 'communication',
     issuerLogo: '/udemy.png',
+    linkToCertification:
+      'https://www.udemy.com/certificate/UC-8ccfeb90-84ac-42b7-882a-113efcd8bd4c/',
   },
   {
     name: 'prob solving & decision making',
@@ -126,6 +130,8 @@ export const certifications = [
     issueDate: '05/2023',
     skillsLearnt: 'problem solving',
     issuerLogo: '/udemy.png',
+    linkToCertification:
+      'https://www.udemy.com/certificate/UC-e103957c-c162-4f32-90c5-f8ff86b00b94/',
   },
 ]
 
@@ -143,3 +149,9 @@ export const contactDetails = [
     link: '/kristijanlazarev',
   },
 ]
+
+export const sectionMediaQueries =
+  'w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[100px]'
+
+export const displayMediaQueries =
+  'w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-[200px]'

@@ -1,12 +1,15 @@
-ABOUT SECTION - SHORT
-INCLUDING A DOWNLOADABLE CV PDF FILE
+try to make a general mq - like a 1/5 2/5 3/5 4/5 5/5 for width for it to be general for all ?
 
-MAKE HEADERS NAMES INTO A REPETING FUNCTION
+check if more less btn is working
 
+check margins between sections on small screens
+
+add displayMediaQueries as template literals
+add xs query to constants and everywhere
+
+check for warnings in console
+try to make it when you make window bigger/smaller to stay on the same section
+
+check all files with use client to see if they really need it
+try to make react n next AND illustrator w-3/5
 MAKE PRIVACY POLICY AND TERMS OF USE
-
-
-make content stand out with shadows - make background and sides lighter colors so they blend out
-framer motion for animations
-
-make contacts as links to just click and redirect

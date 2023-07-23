@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import { Button } from '@/components'
+import { sectionMediaQueries } from '@/constants'
 
 const Footer = () => {
   return (
     <div className="mont text pt-[100px] footerColor pb-[50px]">
-      <div className="w-[1100px] my-0 mx-auto">
+      <div className={`${sectionMediaQueries} my-0 mx-auto`}>
         <Link href="#hero">
           <Button title="back to top?" inline />
         </Link>
@@ -14,7 +15,7 @@ const Footer = () => {
           yourself too.
         </p>
         <div className="mt-[30px] flex justify-between">
-          <div>
+          <div className="my-auto">
             <span>
               copyright © kristijan lazarev 2023. all rights reserved.
             </span>

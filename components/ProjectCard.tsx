@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const ProjectCard = ({
   name,
@@ -17,22 +18,22 @@ const ProjectCard = ({
   githubUrl: string
 }) => {
   return (
-    <div className="mont text w-[301px] text-left mb-[100px] relative">
+    <div className="mont smallCaps text-[20px] md:text-[18px] w-[301px] text-left mb-[100px] relative">
       <Image
         src={imgUrl}
-        width={300}
+        width={350}
         height={300}
         alt={name}
         className="shadow-2xl imageBorder"
       />
-      <a
+      <Link
         href={githubUrl}
         target="_blank"
         className="absolute top-1 right-10 bg-white rounded-[15px] p-[3px]"
       >
         <Image src="/githubLogo.svg" width={25} height={25} alt="github logo" />
-      </a>
-      <a
+      </Link>
+      <Link
         href={liveUrl}
         target="_blank"
         className="absolute top-1 right-1 bg-white rounded-[15px] p-[3px]"
@@ -43,7 +44,7 @@ const ProjectCard = ({
           height={25}
           alt="live logo"
         />
-      </a>
+      </Link>
       <p>{name}</p>
       <p>{description}</p>
       <p>{tools}</p>
