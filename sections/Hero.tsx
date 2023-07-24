@@ -7,7 +7,10 @@ import { slideIn } from '../utils/motion'
 import { sectionMediaQueries } from '../constants'
 const Home = () => {
   return (
-    <div className="pb-[100px] shadow-2xl overflow-x-hidden" id="hero">
+    <div
+      className="pb-[100px] mainBackgroundPattern shadow-2xl overflow-x-hidden"
+      id="hero"
+    >
       {/* <div className={`${sectionMediaQueries} flex sm:flex-col my-0 mx-auto`}> */}
       <div
         className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] flex sm:flex-col my-0 mx-auto`}

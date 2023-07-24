@@ -15,10 +15,13 @@ import { slideIn } from '@/utils/motion'
 
 const Skills = () => {
   return (
-    <div className="mont pb-[100px]  shadow-2xl " id="skills">
+    <div
+      className="mont mainBackgroundPattern pb-[100px]  shadow-2xl "
+      id="skills"
+    >
       {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
       <div
-        className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
+        className={`text-center w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
       >
         <Heading title="SKILLS" />
         <div className="flex flex-wrap mt-[80px]">

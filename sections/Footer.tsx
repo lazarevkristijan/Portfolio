@@ -5,15 +5,15 @@ import { sectionMediaQueries } from '@/constants'
 
 const Footer = () => {
   return (
-    <div className="mont smallCaps text-[20px] pt-[100px] footerColor pb-[50px]">
+    <div className=" mont smallCaps text-[20px] pt-[100px] mainBackgroundPattern pb-[50px]">
       {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
       <div
-        className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
+        className={`xs:text-center w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
       >
         <Link href="#hero">
           <Button title="back to top?" inline />
         </Link>
-        <p className="w-[320px] mt-[75px] leading-5">
+        <p className="xs:mx-auto w-[320px] mt-[75px] leading-5">
           your only limitation is the one <br />
           which you set up in your own mind. <br />
           -Napoleon Hill

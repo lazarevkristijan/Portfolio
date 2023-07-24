@@ -8,11 +8,12 @@ import {
   Footer,
 } from '@/sections/index'
 import { displayMediaQueries } from '@/constants'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="w-full textColor">
-      <div className="backgroundColor">
+      <div className="sideBackground">
         <div
           className="w-full 
         h-[50px] text-center navbarColor fixed shadow-2xl z-10"
@@ -27,17 +28,15 @@ export default function Home() {
 
         <div
           // className={`${displayMediaQueries} my-0 mx-auto`}
-          className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full my-0 mx-auto`}
+          className={`backgroundColor w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full my-0 mx-auto`}
         >
           <Hero />
           <About />
           <Projects />
           <Skills />
           <Contact />
+          <Footer />
         </div>
-      </div>
-      <div className="footerColor">
-        <Footer />
       </div>
     </main>
   )

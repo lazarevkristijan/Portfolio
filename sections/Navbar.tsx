@@ -9,16 +9,19 @@ import { displayMediaQueries } from '@/constants'
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false)
 
-  function handleWindowSize() {
-    const windowWidth = window.innerWidth
-    if (windowWidth <= 420) {
-      setIsMobile(true)
-    } else {
-      setIsMobile(false)
-    }
+  function detectMob() {
+    return window.innerWidth <= 800 && window.innerHeight <= 600
   }
 
   useEffect(() => {
+    function handleWindowSize() {
+      if (window.innerWidth <= 420) {
+        setIsMobile(true)
+      } else {
+        setIsMobile(false)
+      }
+    }
+
     handleWindowSize()
     window.addEventListener('resize', handleWindowSize)
 
@@ -29,7 +32,7 @@ const Navbar = () => {
   return (
     <nav
       // className={`${displayMediaQueries} flex items-center h-[50px]`}
-      className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full flex items-center h-[50px]`}
+      className={` w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full flex items-center h-[50px]`}
     >
       <Link href="#hero">
         <Image
@@ -44,13 +47,14 @@ const Navbar = () => {
         {isMobile
           ? navIcons.map((icon, index) => (
               <Link href={icon.url} key={index}>
-                <Image
-                  src={icon.fileUrl}
-                  alt={icon.name}
-                  width={20}
-                  height={20}
-                  className="hover:scale-125 transition-all"
-                />
+                <div className="bg-white active:bg-gray-300  py-2 px-2 rounded-full">
+                  <Image
+                    src={icon.fileUrl}
+                    alt={icon.name}
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </Link>
             ))
           : navText.map((text, index) => (

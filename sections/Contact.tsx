@@ -12,7 +12,10 @@ import { slideIn } from '@/utils/motion'
 
 const Contact = () => {
   return (
-    <div className="mont pb-[100px] shadow-2xl overflow-hidden" id="contact">
+    <div
+      className="mont mainBackgroundPattern pb-[100px] shadow-2xl overflow-hidden"
+      id="contact"
+    >
       {/* <div className={`${sectionMediaQueries} my-0 mx-auto flex sm:block`}> */}
       <div
         className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto flex sm:block`}
@@ -67,8 +70,8 @@ const Contact = () => {
               />
             </p>
             <p>
-              i love topics such as: <br /> books, fitness & health, coding,
-              personal growth
+              i love topics such as: <br /> books, fitness & health,{' '}
+              <br className="hidden lg:inline" /> coding, personal growth
             </p>
           </div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>

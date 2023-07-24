@@ -27,13 +27,16 @@ const About = () => {
   }
 
   return (
-    <div className="pb-[100px] mont shadow-2xl" id="about">
+    <div
+      className="pb-[100px] mainBackgroundPattern mont shadow-2xl xs:text-center"
+      id="about"
+    >
       {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
       <div
         className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
       >
         <Heading title="ABOUT" />
-        <div className="mt-[80px] mb-[100px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px] text-justify">
+        <div className="xs:mx-auto mt-[80px] mb-[100px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px] text-justify">
           <p>
             KRISTIJAN, a 20 years old boy, overfilled with enthusiasm & craving
             for success. i accept every challenge as an opportunity for

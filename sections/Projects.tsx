@@ -8,10 +8,13 @@ import { sectionMediaQueries } from '@/constants'
 
 const Projects = () => {
   return (
-    <div className="mont text-right  shadow-2xl" id="projects">
+    <div
+      className="mont text-right mainBackgroundPattern shadow-2xl"
+      id="projects"
+    >
       {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
       <div
-        className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
+        className={`xs:text-center w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
       >
         <Heading title="PROJECTS" />
         <p className="mt-[77px] mb-[138px] xl:mb-[118px] lg:mb-[98px] lg:mt-[47px] md:mb-[78px] smallCaps text-[30px] xl:text-[27.5px] lg:text-[25px] md:text-[22.5px] sm:text-[20px]">
