@@ -18,14 +18,16 @@ export default function Home() {
         h-[50px] text-center navbarColor fixed shadow-2xl z-10"
         >
           <div
-            className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-[200px] my-0 mx-auto h-[50px]`}
+            // className={`${displayMediaQueries} my-0 mx-auto h-[50px]`}
+            className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full my-0 mx-auto h-[50px]`}
           >
             <Navbar />
           </div>
         </div>
 
         <div
-          className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-[200px] my-0 mx-auto`}
+          // className={`${displayMediaQueries} my-0 mx-auto`}
+          className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full my-0 mx-auto`}
         >
           <Hero />
           <About />

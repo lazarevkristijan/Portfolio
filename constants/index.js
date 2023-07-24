@@ -125,7 +125,7 @@ export const certifications = [
       'https://www.udemy.com/certificate/UC-8ccfeb90-84ac-42b7-882a-113efcd8bd4c/',
   },
   {
-    name: 'prob solving & decision making',
+    name: 'management skills',
     issuer: 'udemy',
     issueDate: '05/2023',
     skillsLearnt: 'problem solving',
@@ -151,7 +151,7 @@ export const contactDetails = [
 ]
 
 export const sectionMediaQueries =
-  'w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[100px]'
+  'w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%]'
 
 export const displayMediaQueries =
-  'w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-[200px]'
+  'w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full'

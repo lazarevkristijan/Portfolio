@@ -20,7 +20,7 @@ const About = () => {
     }
 
     if (isFullText === 'hidden') {
-      setIsFullText('inline')
+      setIsFullText('block')
     } else {
       setIsFullText('hidden')
     }
@@ -28,19 +28,20 @@ const About = () => {
 
   return (
     <div className="pb-[100px] mont shadow-2xl" id="about">
-      <div className={`${sectionMediaQueries} my-0 mx-auto`}>
+      {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
+      <div
+        className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
+      >
         <Heading title="ABOUT" />
-        <div className="mt-[80px] mb-[100px]">
-          <p className=" w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] smallCaps text-[20px] xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] ">
+        <div className="mt-[80px] mb-[100px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px] text-justify">
+          <p>
             KRISTIJAN, a 20 years old boy, overfilled with enthusiasm & craving
             for success. i accept every challenge as an opportunity for
             personal, professional growth & development. love taking risks,
             improving my mind, my body & health, making life purposely
             uncomfortable to get the best out of it!
           </p>
-          <p
-            className={`mt-[20px] lg:${isFullText} w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] smallCaps text-[20px] xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px]`}
-          >
+          <p className={`mt-[20px] lg:${isFullText} `}>
             working since the age of 13, coming with experience as a sales
             agent, electrician & fitness trainer. since jan 2023 fully committed
             to front end web development. i withhold high level skills in
@@ -63,7 +64,7 @@ const About = () => {
               className="flex"
               href="https://dl.dropboxusercontent.com/scl/fi/zbkkh2qhxml55ip4ti65u/Kristijan-Lazarev-CV-ENG.pdf?rlkey=4q793zfc99jhqzontj02lijxf&dl=0"
             >
-              <p className="text-[20px] xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] smallCaps">
+              <p className="text-[20px] xl:text-[18px] md:text-[16px] sm:text-[14px] smallCaps">
                 pdf portfolio
               </p>
               <Image

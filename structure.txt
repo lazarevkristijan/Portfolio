@@ -1,11 +1,8 @@
-try to make a general mq - like a 1/5 2/5 3/5 4/5 5/5 for width for it to be general for all ?
+make phone responsiveness
 
-check if more less btn is working
+make margins and paddings persistent - same height difference between headers and content
 
-check margins between sections on small screens
-
-add displayMediaQueries as template literals
-add xs query to constants and everywhere
+more interesting side background
 
 check for warnings in console
 try to make it when you make window bigger/smaller to stay on the same section

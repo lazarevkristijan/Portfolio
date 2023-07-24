@@ -9,7 +9,8 @@ import { displayMediaQueries } from '@/constants'
 const Navbar = () => {
   return (
     <nav
-      className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-[200px] flex items-center h-[50px]`}
+      // className={`${displayMediaQueries} flex items-center h-[50px]`}
+      className={`w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full flex items-center h-[50px]`}
     >
       <Link href="#hero">
         <Image
