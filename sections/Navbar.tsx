@@ -1,12 +1,31 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { navItems } from '../constants'
+import { navIcons, navText } from '../constants'
 import Image from 'next/image'
 import { displayMediaQueries } from '@/constants'
 
 const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  function handleWindowSize() {
+    const windowWidth = window.innerWidth
+    if (windowWidth <= 420) {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  }
+
+  useEffect(() => {
+    handleWindowSize()
+    window.addEventListener('resize', handleWindowSize)
+
+    return () => {
+      window.removeEventListener('resize', handleWindowSize)
+    }
+  }, [])
   return (
     <nav
       // className={`${displayMediaQueries} flex items-center h-[50px]`}
@@ -18,20 +37,29 @@ const Navbar = () => {
           width={45}
           height={45}
           alt="logo"
-          className="ml-[50px] xl:ml-[40px] lg:ml-[30px] md:ml-[20px] sm:ml-[10px] md:w-[40px] hover:scale-105 transition-all"
+          className="ml-[50px] xl:ml-[40px] lg:ml-[30px] md:ml-[20px] sm:ml-[10px] xs:ml-[20px] md:w-[40px] hover:scale-105 transition-all"
         />
       </Link>
       <ul className="w-full flex justify-evenly">
-        {navItems.map((item, index) => (
-          <Link href={item.url} key={index}>
-            <li
-              key={index}
-              className="smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont hover:scale-105 transition-all"
-            >
-              {item.name}
-            </li>
-          </Link>
-        ))}
+        {isMobile
+          ? navIcons.map((icon, index) => (
+              <Link href={icon.url} key={index}>
+                <Image
+                  src={icon.fileUrl}
+                  alt={icon.name}
+                  width={20}
+                  height={20}
+                  className="hover:scale-125 transition-all"
+                />
+              </Link>
+            ))
+          : navText.map((text, index) => (
+              <Link href={text.url} key={index}>
+                <li className="smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont hover:scale-105 transition-all">
+                  {text.name}
+                </li>
+              </Link>
+            ))}
       </ul>
     </nav>
   )

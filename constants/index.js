@@ -1,4 +1,4 @@
-export const navItems = [
+export const navText = [
   {
     name: 'about',
     url: '#about',
@@ -14,6 +14,29 @@ export const navItems = [
   {
     name: 'contact',
     url: '#contact',
+  },
+]
+
+export const navIcons = [
+  {
+    name: 'about',
+    url: '#about',
+    fileUrl: '/about2.svg',
+  },
+  {
+    name: 'projects',
+    url: '#projects',
+    fileUrl: '/projects1.svg',
+  },
+  {
+    name: 'skills',
+    url: '#skills',
+    fileUrl: '/skills3.svg',
+  },
+  {
+    name: 'contact',
+    url: '#contact',
+    fileUrl: '/contact1.svg',
   },
 ]
 
