@@ -60,12 +60,11 @@
 }
 
 .mainBackgroundPattern {
-  /* background: url('/mainBackgroundPattern.svg'); */
   background: rgb(61, 64, 81);
   background: linear-gradient(
     180deg,
     rgba(61, 64, 81, 1) 0%,
-    rgba(79, 80, 106, 1) 50%,
+    rgba(51, 63, 76, 1) 50%,
     rgba(61, 64, 81, 1) 100%
   );
 }

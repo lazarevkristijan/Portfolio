@@ -4,17 +4,12 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { slideIn } from '../utils/motion'
-import { sectionMediaQueries } from '../constants'
+import { sectionMediaQueries, sectionTopDivStyles } from '../constants'
+
 const Home = () => {
   return (
-    <div
-      className="pb-[100px] mainBackgroundPattern shadow-2xl overflow-x-hidden"
-      id="hero"
-    >
-      {/* <div className={`${sectionMediaQueries} flex sm:flex-col my-0 mx-auto`}> */}
-      <div
-        className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] flex sm:flex-col my-0 mx-auto`}
-      >
+    <div className={`${sectionTopDivStyles} overflow-x-hidden`} id="hero">
+      <div className={`${sectionMediaQueries} flex sm:flex-col`}>
         <motion.div
           variants={slideIn('left', 'spring', 0, 1)}
           initial="hidden"
@@ -26,7 +21,7 @@ const Home = () => {
             alt="Main Pic"
             width={409}
             height={614}
-            className=" drop-shadow-2xl"
+            className="drop-shadow-2xl"
           />
         </motion.div>
         <motion.div
@@ -45,7 +40,7 @@ const Home = () => {
             />
           </div>
           <div className="w-4/5 xl:my-0 xl:mx-auto">
-            <p className="ps2p text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] ">
+            <p className="ps2p text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl ">
               KRISTIJAN
               <br />
               LAZAREV <br />

@@ -4,9 +4,9 @@ import Image from 'next/image'
 import React from 'react'
 import { Heading } from '../components/index'
 import Link from 'next/link'
-import { sectionMediaQueries } from '@/constants'
+import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 import { useState } from 'react'
-import { Button } from '../components/index'
+import { aboutTextStyles } from '@/constants'
 
 const About = () => {
   const [isFullText, setIsFullText] = useState('hidden')
@@ -24,19 +24,18 @@ const About = () => {
     } else {
       setIsFullText('hidden')
     }
+
+    console.log(isFullText)
+    console.log(moreLessText)
   }
 
   return (
-    <div
-      className="pb-[100px] mainBackgroundPattern mont shadow-2xl xs:text-center"
-      id="about"
-    >
-      {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
-      <div
-        className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
-      >
+    <div className={`${sectionTopDivStyles} mont xs:text-center`} id="about">
+      <div className={`${sectionMediaQueries} xs:w-[90%]`}>
         <Heading title="ABOUT" />
-        <div className="xs:mx-auto mt-[80px] mb-[100px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px] text-justify">
+        <div
+          className={`${aboutTextStyles} xs:mx-auto mt-[80px] mb-[80px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] text-justify`}
+        >
           <p>
             KRISTIJAN, a 20 years old boy, overfilled with enthusiasm & craving
             for success. i accept every challenge as an opportunity for
@@ -44,7 +43,7 @@ const About = () => {
             improving my mind, my body & health, making life purposely
             uncomfortable to get the best out of it!
           </p>
-          <p className={`mt-[20px] lg:${isFullText} `}>
+          <p className={`mt-[20px] lg:${isFullText}`}>
             working since the age of 13, coming with experience as a sales
             agent, electrician & fitness trainer. since jan 2023 fully committed
             to front end web development. i withhold high level skills in
@@ -55,7 +54,7 @@ const About = () => {
             written by the people that have already made it.
           </p>
           <span
-            className={`${isFullText} lg:block w-fit mt-3 smallCaps text-[20px] xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px]`}
+            className={`${isFullText} lg:block w-fit mt-3`}
             onClick={handleMoreLessOption}
           >
             {moreLessText}
@@ -67,16 +66,16 @@ const About = () => {
               className="flex"
               href="https://dl.dropboxusercontent.com/scl/fi/zbkkh2qhxml55ip4ti65u/Kristijan-Lazarev-CV-ENG.pdf?rlkey=4q793zfc99jhqzontj02lijxf&dl=0"
             >
-              <p className="text-[20px] xl:text-[18px] md:text-[16px] sm:text-[14px] smallCaps">
-                pdf portfolio
-              </p>
-              <Image
-                src="/download-button-w.svg"
-                width={18}
-                height={15}
-                alt="download button"
-                className="text-right"
-              />
+              <p className={`${aboutTextStyles}`}>pdf portfolio</p>
+              <span className="bg-[#1F1F2D] max-w-fit rounded-full py-[6px] px-[6px] my-auto ml-1">
+                <Image
+                  src="/download-button.svg"
+                  width={15}
+                  height={15}
+                  alt="download button"
+                  className="text-right hover:scale-110 transition-all"
+                />
+              </span>
             </Link>
           </div>
           <Image
@@ -84,7 +83,7 @@ const About = () => {
             alt="hobbies ilustration"
             width={502}
             height={100}
-            className="h-[200px] object-cover rounded-[2px] imageBorder"
+            className="h-[200px] object-cover imageBorder"
           />
         </div>
       </div>

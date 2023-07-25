@@ -4,20 +4,17 @@ import React from 'react'
 import { Heading, ProjectCard } from '../components/index'
 import { projects } from '../constants/'
 import { motion } from 'framer-motion'
-import { sectionMediaQueries } from '@/constants'
+import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 
 const Projects = () => {
   return (
     <div
-      className="mont text-right mainBackgroundPattern shadow-2xl"
+      className={`${sectionTopDivStyles} mont md:pb-[50px] text-right`}
       id="projects"
     >
-      {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
-      <div
-        className={`xs:text-center w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
-      >
+      <div className={`${sectionMediaQueries} xs:text-center`}>
         <Heading title="PROJECTS" />
-        <p className="mt-[77px] mb-[138px] xl:mb-[118px] lg:mb-[98px] lg:mt-[47px] md:mb-[78px] smallCaps text-[30px] xl:text-[27.5px] lg:text-[25px] md:text-[22.5px] sm:text-[20px]">
+        <p className="mt-[80px] mb-[138px] xl:mb-[118px] lg:mb-[98px] lg:mt-[47px] md:mb-[78px] smallCaps text-[30px] xl:text-[27.5px] lg:text-[25px] md:text-[22.5px] sm:text-[20px]">
           demonstrating my skills: <br className="md:inline hidden" /> a
           selection of projects
         </p>

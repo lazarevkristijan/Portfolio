@@ -18,13 +18,13 @@ const ProjectCard = ({
   githubUrl: string
 }) => {
   return (
-    <div className="mont smallCaps text-[20px] md:text-[18px] w-[301px] text-left mb-[100px] md:mb-[50px] relative">
+    <div className="mont smallCaps text-[20px] md:text-[18px] w-[301px] text-left md:mb-[50px] xl:mb-[20px] relative">
       <Image
         src={imgUrl}
         width={350}
         height={300}
         alt={name}
-        className="shadow-2xl imageBorder"
+        className="drop-shadow-2xl imageBorder"
       />
       <Link
         href={githubUrl}

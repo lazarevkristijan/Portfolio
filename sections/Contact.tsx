@@ -7,19 +7,15 @@ import { contactDetails } from '@/constants'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { sectionMediaQueries } from '@/constants'
+import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 import { slideIn } from '@/utils/motion'
+import { Flag } from '../components/index'
+import { flags } from '@/constants'
 
 const Contact = () => {
   return (
-    <div
-      className="mont mainBackgroundPattern pb-[100px] shadow-2xl overflow-hidden"
-      id="contact"
-    >
-      {/* <div className={`${sectionMediaQueries} my-0 mx-auto flex sm:block`}> */}
-      <div
-        className={`w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto flex sm:block`}
-      >
+    <div className={`${sectionTopDivStyles} mont overflow-hidden`} id="contact">
+      <div className={`${sectionMediaQueries} xs:w-[90%] flex sm:block`}>
         <div className="w-1/2 sm:w-full">
           <Heading title="CONTACT" />
           <p className="mt-[50px] text-[20px]">LET&lsquo;S CONNECT</p>
@@ -33,41 +29,16 @@ const Contact = () => {
             ))}
             <p className="mt-[30px]">
               i speak
-              <Image
-                src="us.svg"
-                alt="svg"
-                width={20}
-                height={20}
-                className="inline ml-1"
-              />
-              <Image
-                src="de.svg"
-                alt="svg"
-                width={20}
-                height={20}
-                className="inline ml-1"
-              />
-              <Image
-                src="mk.svg"
-                alt="svg"
-                width={20}
-                height={20}
-                className="inline ml-1"
-              />
-              <Image
-                src="bg.svg"
-                alt="svg"
-                width={20}
-                height={20}
-                className="inline ml-1"
-              />
-              <Image
-                src="rs.svg"
-                alt="svg"
-                width={20}
-                height={20}
-                className="inline ml-1"
-              />
+              {flags.map((flag, index) => (
+                <Flag
+                  key={index}
+                  source={flag.source}
+                  alt={flag.alt}
+                  width={flag.width}
+                  height={flag.height}
+                  classname={flag.className}
+                />
+              ))}
             </p>
             <p>
               i love topics such as: <br /> books, fitness & health,{' '}
@@ -89,7 +60,7 @@ const Contact = () => {
                   width={450}
                   height={200}
                   alt="linkedin logo"
-                  className="mt-[75px] sm:mt-[40px] sm:w-[150px] sm:mx-auto"
+                  className="mt-[75px] sm:mt-[40px] sm:w-[150px] sm:mx-auto drop-shadow-2xl"
                 />
               </motion.div>
             </Link>
@@ -109,7 +80,7 @@ const Contact = () => {
                   width={300}
                   height={300}
                   alt="gmail logo"
-                  className="w-[260px] mt-[175px] sm:mt-[0px] md:ml-4 md:w-[180px] sm:w-[100px]"
+                  className="w-[260px] mt-[175px] sm:mt-[0px] md:ml-4 md:w-[180px] sm:w-[100px] drop-shadow-2xl"
                 />
               </Link>
             </motion.div>
@@ -122,7 +93,7 @@ const Contact = () => {
                   width={300}
                   height={300}
                   alt="github logo"
-                  className="w-[260px] mt-[30px] sm:mt-[0px] my-0 mx-auto md:w-[180px] sm:w-[100px]"
+                  className="w-[260px] mt-[30px] sm:mt-[0px] my-0 mx-auto md:w-[180px] sm:w-[100px] drop-shadow-2xl"
                 />
               </Link>
             </motion.div>

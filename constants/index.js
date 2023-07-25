@@ -21,22 +21,22 @@ export const navIcons = [
   {
     name: 'about',
     url: '#about',
-    fileUrl: '/about2.svg',
+    fileUrl: '/aboutIcon.svg',
   },
   {
     name: 'projects',
     url: '#projects',
-    fileUrl: '/projects1.svg',
+    fileUrl: '/projectsIcon.svg',
   },
   {
     name: 'skills',
     url: '#skills',
-    fileUrl: '/skills3.svg',
+    fileUrl: '/skillsIcon.svg',
   },
   {
     name: 'contact',
     url: '#contact',
-    fileUrl: '/contact1.svg',
+    fileUrl: '/contactIcon.svg',
   },
 ]
 
@@ -60,7 +60,7 @@ export const projects = [
   {
     name: 'portfolio website',
     description: `the one you're looking at now`,
-    tools: 'html / tailwind / react / next / ts',
+    tools: 'html / tailwind / react / next / ts / figma',
     imgUrl: '/portfolioProjectImage.png',
     liveUrl: '',
     githubUrl: 'https://github.com/lazarevkristijan/personal-next-js-portfolio',
@@ -173,8 +173,53 @@ export const contactDetails = [
   },
 ]
 
+export const flags = [
+  {
+    source: 'us.svg',
+    alt: 'usa flag',
+    width: 20,
+    height: 20,
+    className: 'inline ml-1',
+  },
+  {
+    source: 'de.svg',
+    alt: 'germany flag',
+    width: 20,
+    height: 20,
+    className: 'inline ml-1',
+  },
+  {
+    source: 'mk.svg',
+    alt: 'macedonia flag',
+    width: 20,
+    height: 20,
+    className: 'inline ml-1',
+  },
+  {
+    source: 'bg.svg',
+    alt: 'bulgaria flag',
+    width: 20,
+    height: 20,
+    className: 'inline ml-1',
+  },
+  {
+    source: 'rs.svg',
+    alt: 'serbia flag',
+    width: 20,
+    height: 20,
+    className: 'inline ml-1',
+  },
+]
 export const sectionMediaQueries =
-  'w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%]'
+  'w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] my-0 mx-auto'
 
 export const displayMediaQueries =
   'w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full'
+
+export const sectionTopDivStyles = 'pb-[100px] mainBackgroundPattern shadow-2xl'
+
+export const skillsSubHeaderStyles =
+  'smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center'
+
+export const aboutTextStyles =
+  'smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px]'

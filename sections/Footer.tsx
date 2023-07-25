@@ -1,15 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 import { Button } from '@/components'
-import { sectionMediaQueries } from '@/constants'
+import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 
 const Footer = () => {
   return (
-    <div className=" mont smallCaps text-[20px] pt-[100px] mainBackgroundPattern pb-[50px]">
-      {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
-      <div
-        className={`xs:text-center w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
-      >
+    <div
+      className={`${sectionTopDivStyles} mont smallCaps text-[20px] pt-[100px]`}
+    >
+      <div className={`${sectionMediaQueries} xs:w-[90%] xs:text-center`}>
         <Link href="#hero">
           <Button title="back to top?" inline />
         </Link>

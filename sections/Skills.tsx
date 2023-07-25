@@ -9,26 +9,19 @@ import {
   certifications,
 } from '@/constants'
 import Image from 'next/image'
-import { sectionMediaQueries } from '@/constants'
+import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 import { motion } from 'framer-motion'
 import { slideIn } from '@/utils/motion'
+import { skillsSubHeaderStyles } from '@/constants'
 
 const Skills = () => {
   return (
-    <div
-      className="mont mainBackgroundPattern pb-[100px]  shadow-2xl "
-      id="skills"
-    >
-      {/* <div className={`${sectionMediaQueries} my-0 mx-auto`}> */}
-      <div
-        className={`text-center w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] xs:w-[90%] my-0 mx-auto`}
-      >
+    <div className={`${sectionTopDivStyles} mont`} id="skills">
+      <div className={`${sectionMediaQueries} xs:w-[90%]`}>
         <Heading title="SKILLS" />
         <div className="flex flex-wrap mt-[80px]">
           <div className="w-1/3 h-fit lg:w-1/2 md:w-full">
-            <p className="smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center">
-              FRONT END
-            </p>
+            <p className={`${skillsSubHeaderStyles}`}>FRONT END</p>
             <div className="mt-[30px]">
               {frontEndSkills.map((skill, index) => (
                 <SkillCard name={skill.name} level={skill.level} key={index} />
@@ -36,9 +29,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-1/3 h-fit lg:w-1/2 md:w-full md:mt-[75px]">
-            <p className="smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center">
-              BACK END
-            </p>
+            <p className={`${skillsSubHeaderStyles}`}>BACK END</p>
             <div className="mt-[30px]">
               {backEndSkills.map((skill, index) => (
                 <SkillCard name={skill.name} level={skill.level} key={index} />
@@ -62,9 +53,7 @@ const Skills = () => {
           </div>
           <div className="w-1/3 h-fit lg:w-full lg:mt-[75px] lg:flex lg:flex-wrap">
             <div className="block lg:w-1/2 md:w-full">
-              <p className="smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center">
-                DESIGN
-              </p>
+              <p className={`${skillsSubHeaderStyles}`}>DESIGN</p>
               <div className="mt-[30px]">
                 {designSkills.map((skill, index) => (
                   <SkillCard
