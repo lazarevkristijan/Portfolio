@@ -2,9 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { navIcons, navText } from '../constants'
 import Image from 'next/image'
-import { displayMediaQueries } from '@/constants'
+import { navIcons, navText, displayMediaQueries } from '../constants'
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState('')
@@ -27,7 +26,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`${displayMediaQueries} flex items-center h-[50px]`}>
+    <nav className={`${displayMediaQueries} h-[50px] flex items-center`}>
       <Link href="#hero">
         <Image
           src="/Klogo.svg"
@@ -41,7 +40,7 @@ const Navbar = () => {
         {isMobile === 'true'
           ? navIcons.map((icon, index) => (
               <Link href={icon.url} key={index}>
-                <div className=" bg-white active:bg-gray-300  py-2 px-2 rounded-full">
+                <div className="bg-white active:bg-gray-300 py-2 px-2 rounded-full">
                   <Image
                     src={icon.fileUrl}
                     alt={icon.name}

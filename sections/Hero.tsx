@@ -6,15 +6,18 @@ import { motion } from 'framer-motion'
 import { slideIn } from '../utils/motion'
 import { sectionMediaQueries, sectionTopDivStyles } from '../constants'
 
-const Home = () => {
+const Hero = () => {
   return (
-    <div className={`${sectionTopDivStyles} overflow-x-hidden`} id="hero">
+    <div
+      className={`${sectionTopDivStyles} pt-[100px] overflow-x-hidden`}
+      id="hero"
+    >
       <div className={`${sectionMediaQueries} flex sm:flex-col`}>
         <motion.div
           variants={slideIn('left', 'spring', 0, 1)}
           initial="hidden"
           whileInView="show"
-          className="pt-[131px] w-1/3 sm:w-full"
+          className="w-1/3 sm:w-full"
         >
           <Image
             src="/gradpic.png"
@@ -28,7 +31,7 @@ const Home = () => {
           variants={slideIn('right', 'spring', 0, 1)}
           initial="hidden"
           whileInView="show"
-          className="pt-[131px] sm:pt-[0px] w-2/3 sm:w-full"
+          className="w-2/3 sm:w-full"
         >
           <div className="flex justify-center">
             <Image
@@ -39,7 +42,7 @@ const Home = () => {
               className="mt-[33px] sm:mt-[0px] imageBorder drop-shadow-2xl"
             />
           </div>
-          <div className="w-4/5 xl:my-0 xl:mx-auto">
+          <div className="xl:my-0 xl:mx-auto w-4/5">
             <p className="ps2p text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl ">
               KRISTIJAN
               <br />
@@ -55,4 +58,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero

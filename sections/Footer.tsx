@@ -6,25 +6,25 @@ import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 const Footer = () => {
   return (
     <div
-      className={`${sectionTopDivStyles} mont smallCaps text-[20px] pt-[100px]`}
+      className={`text-[20px] mont smallCaps ${sectionTopDivStyles} pb-[50px]`}
     >
-      <div className={`${sectionMediaQueries} xs:w-[90%] xs:text-center`}>
+      <div className={`xs:text-center ${sectionMediaQueries} xs:w-[90%]`}>
         <Link href="#hero">
           <Button title="back to top?" inline />
         </Link>
-        <p className="xs:mx-auto w-[320px] mt-[75px] leading-5">
+        <p className="leading-5 xs:mx-auto mt-[75px] w-[320px]">
           your only limitation is the one <br />
           which you set up in your own mind. <br />
           -Napoleon Hill
         </p>
         <div className="mt-[30px] flex justify-between md:flex-col-reverse">
-          <div className="my-auto md:text-center">
+          <div className="md:text-center my-auto">
             <span>
               copyright © kristijan lazarev 2023.
               <br className="lg:inline hidden" /> all rights reserved.
             </span>
           </div>
-          <div className="md:flex md:justify-center text-center">
+          <div className="text-center md:flex md:justify-center">
             <Link href="/">
               <Button
                 title="privacy policy"

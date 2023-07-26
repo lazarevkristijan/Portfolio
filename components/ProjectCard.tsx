@@ -18,7 +18,7 @@ const ProjectCard = ({
   githubUrl: string
 }) => {
   return (
-    <div className="mont smallCaps text-[20px] md:text-[18px] w-[301px] text-left md:mb-[50px] xl:mb-[20px] relative">
+    <div className="text-[20px] md:text-[18px] text-left mont smallCaps md:mb-[50px] xl:mb-[20px] w-[301px] relative">
       <Image
         src={imgUrl}
         width={350}
@@ -29,20 +29,27 @@ const ProjectCard = ({
       <Link
         href={githubUrl}
         target="_blank"
-        className="absolute top-1 right-10 bg-white rounded-[15px] p-[3px]"
+        className="bg-white p-[3px] xs:mr-[10px] absolute top-1 right-10 rounded-[15px]"
       >
-        <Image src="/githubLogo.svg" width={25} height={25} alt="github logo" />
+        <Image
+          src="/githubLogo.svg"
+          width={25}
+          height={25}
+          alt="github logo"
+          className="xs:w-[35px]"
+        />
       </Link>
       <Link
         href={liveUrl}
         target="_blank"
-        className="absolute top-1 right-1 bg-white rounded-[15px] p-[3px]"
+        className="bg-white p-[3px] absolute top-1 right-1 rounded-[15px]"
       >
         <Image
           src="/liveUrlButton.svg"
           width={25}
           height={25}
           alt="live logo"
+          className="xs:w-[35px]"
         />
       </Link>
       <p>{name}</p>

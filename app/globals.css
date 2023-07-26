@@ -23,15 +23,11 @@
 }
 
 .navbarColor {
-  background-color: #5d5e76;
+  background-color: #2b4b52;
 }
 
 .textColor {
   color: #fff;
-}
-
-.backgroundColor {
-  background-color: #333f4c;
 }
 
 .horizontalLineColor {
@@ -60,11 +56,5 @@
 }
 
 .mainBackgroundPattern {
-  background: rgb(61, 64, 81);
-  background: linear-gradient(
-    180deg,
-    rgba(61, 64, 81, 1) 0%,
-    rgba(51, 63, 76, 1) 50%,
-    rgba(61, 64, 81, 1) 100%
-  );
+  background-color: #1f3a40;
 }

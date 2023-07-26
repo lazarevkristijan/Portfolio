@@ -1,12 +1,14 @@
 'use client'
 
+import React, { useState } from 'react'
 import Image from 'next/image'
-import React from 'react'
-import { Heading } from '../components/index'
 import Link from 'next/link'
-import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
-import { useState } from 'react'
-import { aboutTextStyles } from '@/constants'
+import { Heading } from '../components/index'
+import {
+  sectionMediaQueries,
+  sectionTopDivStyles,
+  aboutTextStyles,
+} from '@/constants'
 
 const About = () => {
   const [isFullText, setIsFullText] = useState('hidden')
@@ -15,22 +17,15 @@ const About = () => {
   const handleMoreLessOption = () => {
     if (moreLessText === 'more') {
       setMoreLessText('less')
-    } else {
-      setMoreLessText('more')
-    }
-
-    if (isFullText === 'hidden') {
       setIsFullText('block')
     } else {
+      setMoreLessText('more')
       setIsFullText('hidden')
     }
-
-    console.log(isFullText)
-    console.log(moreLessText)
   }
 
   return (
-    <div className={`${sectionTopDivStyles} mont xs:text-center`} id="about">
+    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="about">
       <div className={`${sectionMediaQueries} xs:w-[90%]`}>
         <Heading title="ABOUT" />
         <div
@@ -43,6 +38,7 @@ const About = () => {
             improving my mind, my body & health, making life purposely
             uncomfortable to get the best out of it!
           </p>
+
           <p className={`mt-[20px] lg:${isFullText}`}>
             working since the age of 13, coming with experience as a sales
             agent, electrician & fitness trainer. since jan 2023 fully committed
@@ -54,20 +50,20 @@ const About = () => {
             written by the people that have already made it.
           </p>
           <span
-            className={`${isFullText} lg:block w-fit mt-3`}
+            className={`mt-3 w-fit ${isFullText} lg:block `}
             onClick={handleMoreLessOption}
           >
             {moreLessText}
           </span>
         </div>
-        <div className="w-fit my-0 mx-auto">
+        <div className="my-0 mx-auto w-fit">
           <div className="flex flex-wrap justify-end">
             <Link
               className="flex"
               href="https://dl.dropboxusercontent.com/scl/fi/zbkkh2qhxml55ip4ti65u/Kristijan-Lazarev-CV-ENG.pdf?rlkey=4q793zfc99jhqzontj02lijxf&dl=0"
             >
               <p className={`${aboutTextStyles}`}>pdf portfolio</p>
-              <span className="bg-[#1F1F2D] max-w-fit rounded-full py-[6px] px-[6px] my-auto ml-1">
+              <span className="bg-[#1F1F2D] py-[6px] px-[6px] my-auto ml-1 max-w-fit rounded-full">
                 <Image
                   src="/download-button.svg"
                   width={15}

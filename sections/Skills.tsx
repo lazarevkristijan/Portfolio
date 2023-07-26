@@ -1,25 +1,26 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { Heading, SkillCard, CertificationCard } from '../components/index'
 import {
   frontEndSkills,
   backEndSkills,
   designSkills,
   certifications,
+  skillsSubHeaderStyles,
+  sectionMediaQueries,
+  sectionTopDivStyles,
 } from '@/constants'
-import Image from 'next/image'
-import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
-import { motion } from 'framer-motion'
 import { slideIn } from '@/utils/motion'
-import { skillsSubHeaderStyles } from '@/constants'
 
 const Skills = () => {
   return (
-    <div className={`${sectionTopDivStyles} mont`} id="skills">
+    <div className={`mont ${sectionTopDivStyles}`} id="skills">
       <div className={`${sectionMediaQueries} xs:w-[90%]`}>
         <Heading title="SKILLS" />
-        <div className="flex flex-wrap mt-[80px]">
+        <div className="mt-[80px] flex flex-wrap">
           <div className="w-1/3 h-fit lg:w-1/2 md:w-full">
             <p className={`${skillsSubHeaderStyles}`}>FRONT END</p>
             <div className="mt-[30px]">
@@ -28,7 +29,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          <div className="w-1/3 h-fit lg:w-1/2 md:w-full md:mt-[75px]">
+          <div className="md:mt-[75px] w-1/3 h-fit lg:w-1/2 md:w-full">
             <p className={`${skillsSubHeaderStyles}`}>BACK END</p>
             <div className="mt-[30px]">
               {backEndSkills.map((skill, index) => (
@@ -51,8 +52,8 @@ const Skills = () => {
               />
             </motion.div>
           </div>
-          <div className="w-1/3 h-fit lg:w-full lg:mt-[75px] lg:flex lg:flex-wrap">
-            <div className="block lg:w-1/2 md:w-full">
+          <div className="lg:mt-[75px] w-1/3 h-fit lg:w-full lg:flex lg:flex-wrap">
+            <div className="lg:w-1/2 md:w-full block">
               <p className={`${skillsSubHeaderStyles}`}>DESIGN</p>
               <div className="mt-[30px]">
                 {designSkills.map((skill, index) => (
@@ -64,8 +65,8 @@ const Skills = () => {
                 ))}
               </div>
             </div>
-            <div className="h-fit text-right mt-[50px] lg:mt-[0px] flex flex-wrap lg:w-1/2 md:w-full">
-              <div className="w-full text-center md:mt-[75px]">
+            <div className="text-right mt-[50px] lg:mt-[0px] lg:w-1/2 md:w-full h-fit flex flex-wrap">
+              <div className="text-center md:mt-[75px] w-full">
                 <p className="text-[35px] lg:text-[40px]">CERTIFICATES</p>
               </div>
 

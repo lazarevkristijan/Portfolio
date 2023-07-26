@@ -1,5 +1,4 @@
 make margins and paddings persistent - same height difference between headers and content
-make all duplicate code reusable
 
 more interesting regular background
 
@@ -8,11 +7,8 @@ try to make it when you make window bigger/smaller to stay on the same section
 
 add scrollbar
 
-check for duplicate imports,
 
 add comments all around the files
-make code reusable
-check all files with use client to see if they really need it
 try to make react n next AND illustrator w-3/5 and displayMediaQueries & sectionMediaQueries
 fix scroll snap
 MAKE PRIVACY POLICY AND TERMS OF USE

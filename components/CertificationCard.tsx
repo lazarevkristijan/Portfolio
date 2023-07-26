@@ -19,10 +19,10 @@ const CertificationCard = ({
 }) => {
   return (
     <Link href={linkToCertification} target="_blank">
-      <div className="flex justify-end md:justify-center mont text-[18px] smallCaps items-center mt-[10px] hover:scale-105 transition-all">
+      <div className="text-[18px] mont smallCaps mt-[10px] flex justify-end md:justify-center items-center hover:scale-105 transition-all">
         <div className="md:text-center md:mb-[30px]">
-          <div className="hidden md:block w-[200px] my-0 mx-auto bg-[#fff] ">
-            <div className="w-[50px] h-[50px] my-auto mx-auto">
+          <div className="bg-white my-0 mx-auto w-[200px] hidden md:block">
+            <div className="my-auto mx-auto w-[50px] h-[50px]">
               <Image
                 src={issuerLogo}
                 alt={`${issuer} logo`}
@@ -39,7 +39,7 @@ const CertificationCard = ({
           </p>
           <p>{skillsLearnt}</p>
         </div>
-        <div className="block md:hidden bg-[#fff] ml-2">
+        <div className="bg-white ml-2 block md:hidden">
           <div className="w-[50px]">
             <Image
               src={issuerLogo}

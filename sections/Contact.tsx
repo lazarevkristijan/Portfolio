@@ -1,24 +1,25 @@
 'use client'
 
 import React from 'react'
-import { Heading } from '../components/index'
-import ContactDetail from '@/components/ContactDetail'
-import { contactDetails } from '@/constants'
+import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 import { slideIn } from '@/utils/motion'
-import { Flag } from '../components/index'
-import { flags } from '@/constants'
+import {
+  sectionMediaQueries,
+  sectionTopDivStyles,
+  flags,
+  contactDetails,
+} from '@/constants'
+import { Flag, ContactDetail, Heading } from '../components/index'
 
 const Contact = () => {
   return (
-    <div className={`${sectionTopDivStyles} mont overflow-hidden`} id="contact">
+    <div className={`mont ${sectionTopDivStyles} overflow-hidden`} id="contact">
       <div className={`${sectionMediaQueries} xs:w-[90%] flex sm:block`}>
         <div className="w-1/2 sm:w-full">
           <Heading title="CONTACT" />
-          <p className="mt-[50px] text-[20px]">LET&lsquo;S CONNECT</p>
+          <p className="text-[20px] mt-[50px]">LET&lsquo;S CONNECT</p>
           <div className="text-[20px] smallCaps mt-[30px]">
             {contactDetails.map((socialMedia, index) => (
               <ContactDetail
@@ -60,7 +61,7 @@ const Contact = () => {
                   width={450}
                   height={200}
                   alt="linkedin logo"
-                  className="mt-[75px] sm:mt-[40px] sm:w-[150px] sm:mx-auto drop-shadow-2xl"
+                  className="mt-[75px] sm:mt-[40px] sm:mx-auto sm:w-[150px] drop-shadow-2xl"
                 />
               </motion.div>
             </Link>
@@ -70,7 +71,7 @@ const Contact = () => {
           variants={slideIn('right', 'spring', 0, 1)}
           initial="hidden"
           whileInView="show"
-          className="w-1/2 sm:w-full sm:flex mt-[25px]"
+          className="mt-[25px] w-1/2 sm:w-full sm:flex"
         >
           <div className="sm:w-1/2 ">
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
@@ -80,7 +81,7 @@ const Contact = () => {
                   width={300}
                   height={300}
                   alt="gmail logo"
-                  className="w-[260px] mt-[175px] sm:mt-[0px] md:ml-4 md:w-[180px] sm:w-[100px] drop-shadow-2xl"
+                  className="mt-[175px] sm:mt-[0px] md:ml-4 w-[260px] md:w-[180px] sm:w-[100px] drop-shadow-2xl"
                 />
               </Link>
             </motion.div>
@@ -93,7 +94,7 @@ const Contact = () => {
                   width={300}
                   height={300}
                   alt="github logo"
-                  className="w-[260px] mt-[30px] sm:mt-[0px] my-0 mx-auto md:w-[180px] sm:w-[100px] drop-shadow-2xl"
+                  className="mt-[30px] sm:mt-[0px] my-0 mx-auto w-[260px] md:w-[180px] sm:w-[100px] drop-shadow-2xl"
                 />
               </Link>
             </motion.div>
