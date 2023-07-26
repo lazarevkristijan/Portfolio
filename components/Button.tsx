@@ -13,11 +13,13 @@ const Button = ({
 }) => {
   return (
     <div
-      className={` bg-[#1F1F2D] ${overridePadding || 'px-5 py-3'} ${
-        margin || ''
-      } max-w-fit rounded-full hover:scale-105 transition-all ${
-        inline ? 'inline-block' : ''
-      }`}
+      className={` bg-[#1F1F2D] 
+      max-w-fit rounded-full
+      hover:scale-105 transition-all cursor-pointer
+      ${margin || ''} 
+      ${overridePadding || 'px-5 py-3'}
+        ${inline ? 'inline-block' : ''}
+         `}
     >
       {title}
     </div>

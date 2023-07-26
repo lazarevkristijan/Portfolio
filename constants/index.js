@@ -82,11 +82,11 @@ export const frontEndSkills = [
   },
   {
     name: 'react',
-    level: 'w-2/3',
+    level: 'w-3/5',
   },
   {
     name: 'next.js',
-    level: 'w-2/3',
+    level: 'w-3/5',
   },
   {
     name: 'typescript',
@@ -120,7 +120,7 @@ export const designSkills = [
   },
   {
     name: 'illustrator',
-    level: 'w-2/3',
+    level: 'w-3/5',
   },
   {
     name: 'figma',

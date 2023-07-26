@@ -1,14 +1,12 @@
 make margins and paddings persistent - same height difference between headers and content
 
-more interesting regular background
-
 check for warnings in console
 try to make it when you make window bigger/smaller to stay on the same section
-
 add scrollbar
 
-
 add comments all around the files
-try to make react n next AND illustrator w-3/5 and displayMediaQueries & sectionMediaQueries
 fix scroll snap
+
+
+threeshaking?
 MAKE PRIVACY POLICY AND TERMS OF USE

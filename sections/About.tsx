@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Heading } from '../components/index'
+import { Heading, Button } from '../components/index'
 import {
   sectionMediaQueries,
   sectionTopDivStyles,
@@ -11,17 +11,10 @@ import {
 } from '@/constants'
 
 const About = () => {
-  const [isFullText, setIsFullText] = useState('hidden')
   const [moreLessText, setMoreLessText] = useState('more')
 
   const handleMoreLessOption = () => {
-    if (moreLessText === 'more') {
-      setMoreLessText('less')
-      setIsFullText('block')
-    } else {
-      setMoreLessText('more')
-      setIsFullText('hidden')
-    }
+    setMoreLessText((prev) => (prev === 'more' ? 'less' : 'more'))
   }
 
   return (
@@ -39,22 +32,61 @@ const About = () => {
             uncomfortable to get the best out of it!
           </p>
 
-          <p className={`mt-[20px] lg:${isFullText}`}>
-            working since the age of 13, coming with experience as a sales
-            agent, electrician & fitness trainer. since jan 2023 fully committed
-            to front end web development. i withhold high level skills in
-            graphics design, computer set-ups & 96 wpm typing speed. i possess
-            good knowledge of the front end environment, how the internet works
-            & a basic understanding of the backend workflow. constantly working
-            on new ideas and learning new skills through projects & books
-            written by the people that have already made it.
-          </p>
-          <span
-            className={`mt-3 w-fit ${isFullText} lg:block `}
-            onClick={handleMoreLessOption}
-          >
-            {moreLessText}
-          </span>
+          {moreLessText === 'less' ? (
+            <p className={`mt-[20px] lg:hidden block`}>
+              working since the age of 13, coming with experience as a sales
+              agent, electrician & fitness trainer. since jan 2023 fully
+              committed to front end web development. i withhold high level
+              skills in graphics design, computer set-ups & 96 wpm typing speed.
+              i possess good knowledge of the front end environment, how the
+              internet works & a basic understanding of the backend workflow.
+              constantly working on new ideas and learning new skills through
+              projects & books written by the people that have already made it.
+            </p>
+          ) : (
+            'ooo'
+          )}
+
+          {moreLessText === 'more' ? (
+            ''
+          ) : (
+            <p className={`mt-[20px] hidden lg:block`}>
+              working since the age of 13, coming with experience as a sales
+              agent, electrician & fitness trainer. since jan 2023 fully
+              committed to front end web development. i withhold high level
+              skills in graphics design, computer set-ups & 96 wpm typing speed.
+              i possess good knowledge of the front end environment, how the
+              internet works & a basic understanding of the backend workflow.
+              constantly working on new ideas and learning new skills through
+              projects & books written by the people that have already made it.
+            </p>
+          )}
+
+          {moreLessText === 'more' ? (
+            <span
+              className={`w-fit hidden lg:inline`}
+              onClick={handleMoreLessOption}
+            >
+              <Button
+                title={moreLessText}
+                overridePadding="px-2 py-1"
+                margin="mt-2"
+                inline
+              />
+            </span>
+          ) : (
+            <span
+              className={`w-fit hidden lg:inline`}
+              onClick={handleMoreLessOption}
+            >
+              <Button
+                title={moreLessText}
+                overridePadding="px-2 py-1"
+                margin="mt-2"
+                inline
+              />
+            </span>
+          )}
         </div>
         <div className="my-0 mx-auto w-fit">
           <div className="flex flex-wrap justify-end">
