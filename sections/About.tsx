@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Heading, Button } from '../components/index'
@@ -12,17 +12,32 @@ import {
 
 const About = () => {
   const [moreLessText, setMoreLessText] = useState('more')
+  const [isFullText, setIsFullText] = useState(true)
+
+  useEffect(() => {
+    const handleResize = () => {
+      const onLargeRender = window.innerWidth > 1020
+      setIsFullText(onLargeRender)
+    }
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   const handleMoreLessOption = () => {
     setMoreLessText((prev) => (prev === 'more' ? 'less' : 'more'))
   }
 
   return (
-    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="about">
+    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="profile">
       <div className={`${sectionMediaQueries} xs:w-[90%]`}>
-        <Heading title="ABOUT" />
+        <Heading title="PROFILE" />
         <div
-          className={`${aboutTextStyles} xs:mx-auto mt-[80px] mb-[80px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] text-justify`}
+          className={`${aboutTextStyles} xs:mx-auto mt-[80px] md:mt-[60px] mb-[80px] md:mb-[60px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] text-justify`}
         >
           <p>
             KRISTIJAN, a 20 years old boy, overfilled with enthusiasm & craving
@@ -32,8 +47,8 @@ const About = () => {
             uncomfortable to get the best out of it!
           </p>
 
-          {moreLessText === 'less' ? (
-            <p className={`mt-[20px] lg:hidden block`}>
+          {isFullText && (
+            <p className="mt-[20px] lg:hidden">
               working since the age of 13, coming with experience as a sales
               agent, electrician & fitness trainer. since jan 2023 fully
               committed to front end web development. i withhold high level
@@ -43,13 +58,9 @@ const About = () => {
               constantly working on new ideas and learning new skills through
               projects & books written by the people that have already made it.
             </p>
-          ) : (
-            'ooo'
           )}
 
-          {moreLessText === 'more' ? (
-            ''
-          ) : (
+          {moreLessText === 'less' && isFullText == false && (
             <p className={`mt-[20px] hidden lg:block`}>
               working since the age of 13, coming with experience as a sales
               agent, electrician & fitness trainer. since jan 2023 fully

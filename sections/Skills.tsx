@@ -17,10 +17,11 @@ import { slideIn } from '@/utils/motion'
 
 const Skills = () => {
   return (
-    <div className={`mont ${sectionTopDivStyles}`} id="skills">
+    // pb - medium usually 75px, now 45px cos certification cards have 30px margin bottom, so 30 + 45 = 75
+    <div className={`mont ${sectionTopDivStyles} md:pb-[45px]`} id="skills">
       <div className={`${sectionMediaQueries} xs:w-[90%]`}>
         <Heading title="SKILLS" />
-        <div className="mt-[80px] flex flex-wrap">
+        <div className="mt-[80px] md:mt-[60px] flex flex-wrap">
           <div className="w-1/3 h-fit lg:w-1/2 md:w-full">
             <p className={`${skillsSubHeaderStyles}`}>FRONT END</p>
             <div className="mt-[30px]">
@@ -29,7 +30,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          <div className="md:mt-[75px] w-1/3 h-fit lg:w-1/2 md:w-full">
+          <div className="md:mt-[60px] w-1/3 h-fit lg:w-1/2 md:w-full">
             <p className={`${skillsSubHeaderStyles}`}>BACK END</p>
             <div className="mt-[30px]">
               {backEndSkills.map((skill, index) => (
@@ -41,7 +42,7 @@ const Skills = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="mt-[130px] lg:mt-[90px]"
+              className="mt-[130px] lg:mt-[60px]"
             >
               <Image
                 src="/businessImage.png"
@@ -52,7 +53,7 @@ const Skills = () => {
               />
             </motion.div>
           </div>
-          <div className="lg:mt-[75px] w-1/3 h-fit lg:w-full lg:flex lg:flex-wrap">
+          <div className="lg:mt-[60px] w-1/3 h-fit lg:w-full lg:flex lg:flex-wrap">
             <div className="lg:w-1/2 md:w-full block">
               <p className={`${skillsSubHeaderStyles}`}>DESIGN</p>
               <div className="mt-[30px]">
@@ -66,7 +67,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="text-right mt-[50px] lg:mt-[0px] lg:w-1/2 md:w-full h-fit flex flex-wrap">
-              <div className="text-center md:mt-[75px] w-full">
+              <div className="text-center md:mt-[60px] w-full">
                 <p className="text-[35px] lg:text-[40px]">CERTIFICATES</p>
               </div>
 

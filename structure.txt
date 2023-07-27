@@ -1,12 +1,16 @@
-make margins and paddings persistent - same height difference between headers and content
+make margins and paddings persistent - same height difference between headers and contentn
+
+change about name in document - and all classnames named by ABOUT
+add margins between sections on XS so that there is some effect felt from the fancy side backgroudn i have
 
 check for warnings in console
 try to make it when you make window bigger/smaller to stay on the same section
 add scrollbar
 
+
 add comments all around the files
 fix scroll snap
 
-
+Update CV to be the latest version
 threeshaking?
 MAKE PRIVACY POLICY AND TERMS OF USE

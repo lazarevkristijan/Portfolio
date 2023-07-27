@@ -7,13 +7,15 @@ import { sectionMediaQueries, sectionTopDivStyles, projects } from '@/constants'
 
 const Projects = () => {
   return (
+    // pb - usually 100px, here we make it xl:80 cos we have 20px mb on the projectcards, so now we have combined 100px spacing below the section, so 20 + 80 = 100
+    // pb - medium usually 75px, here we make it md:pb-[25px] because on medium the project cards have 50px mb, so 25 + 50 = 75
     <div
-      className={`text-right mont md:pb-[50px] ${sectionTopDivStyles}`}
+      className={`text-right mont md:pb-[50px] ${sectionTopDivStyles} xl:pb-[80px] md:pb-[25px]`}
       id="projects"
     >
       <div className={`xs:text-center ${sectionMediaQueries}`}>
         <Heading title="PROJECTS" />
-        <p className="text-[30px] xl:text-[27.5px] lg:text-[25px] md:text-[22.5px] sm:text-[20px] smallCaps mt-[80px] mb-[138px] xl:mb-[118px] lg:mb-[98px] lg:mt-[47px] md:mb-[78px]">
+        <p className="text-[30px] xl:text-[27.5px] lg:text-[25px] md:text-[22.5px] sm:text-[20px] smallCaps mt-[80px] md:mt-[60px] mb-[80px] md:mb-[60px]">
           demonstrating my skills: <br className="md:inline hidden" /> a
           selection of projects
         </p>

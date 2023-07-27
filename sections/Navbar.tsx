@@ -40,7 +40,7 @@ const Navbar = () => {
         {isMobile === 'true'
           ? navIcons.map((icon, index) => (
               <Link href={icon.url} key={index}>
-                <div className="bg-white active:bg-gray-300 py-2 px-2 rounded-full">
+                <div className="bg-[#1f3a40] active:bg-gray-300 py-2 px-2 rounded-full">
                   <Image
                     src={icon.fileUrl}
                     alt={icon.name}
@@ -53,7 +53,7 @@ const Navbar = () => {
           : isMobile === 'false'
           ? navText.map((text, index) => (
               <Link href={text.url} key={index}>
-                <li className="smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont hover:scale-105 transition-all">
+                <li className="smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont hover:scale-105 transition-all text-[#c1ffbf]">
                   {text.name}
                 </li>
               </Link>

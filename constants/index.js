@@ -1,7 +1,7 @@
 export const navText = [
   {
-    name: 'about',
-    url: '#about',
+    name: 'profile',
+    url: '#profile',
   },
   {
     name: 'projects',
@@ -216,7 +216,8 @@ export const sectionMediaQueries =
 export const displayMediaQueries =
   'w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full'
 
-export const sectionTopDivStyles = 'pb-[100px] mainBackgroundPattern shadow-2xl'
+export const sectionTopDivStyles =
+  'pb-[100px] md:pb-[75px] mainBackgroundPattern shadow-2xl'
 
 export const skillsSubHeaderStyles =
   'smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center'

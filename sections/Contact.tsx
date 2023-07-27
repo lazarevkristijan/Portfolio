@@ -19,7 +19,9 @@ const Contact = () => {
       <div className={`${sectionMediaQueries} xs:w-[90%] flex sm:block`}>
         <div className="w-1/2 sm:w-full">
           <Heading title="CONTACT" />
-          <p className="text-[20px] mt-[50px]">LET&lsquo;S CONNECT</p>
+          <p className="text-[20px] mt-[80px] md:mt-[60px]">
+            LET&lsquo;S CONNECT
+          </p>
           <div className="text-[20px] smallCaps mt-[30px]">
             {contactDetails.map((socialMedia, index) => (
               <ContactDetail
