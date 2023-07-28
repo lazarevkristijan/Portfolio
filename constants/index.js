@@ -1,7 +1,7 @@
 export const navText = [
   {
-    name: 'profile',
-    url: '#profile',
+    name: 'about me',
+    url: '#aboutMe',
   },
   {
     name: 'projects',
@@ -19,9 +19,9 @@ export const navText = [
 
 export const navIcons = [
   {
-    name: 'about',
-    url: '#about',
-    fileUrl: '/aboutIcon.svg',
+    name: 'aboutMe',
+    url: '#aboutMe',
+    fileUrl: '/aboutMeIcon.svg',
   },
   {
     name: 'projects',
@@ -179,35 +179,35 @@ export const flags = [
     alt: 'usa flag',
     width: 20,
     height: 20,
-    className: 'inline ml-1',
+    className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
     source: 'de.svg',
     alt: 'germany flag',
     width: 20,
     height: 20,
-    className: 'inline ml-1',
+    className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
     source: 'mk.svg',
     alt: 'macedonia flag',
     width: 20,
     height: 20,
-    className: 'inline ml-1',
+    className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
     source: 'bg.svg',
     alt: 'bulgaria flag',
     width: 20,
     height: 20,
-    className: 'inline ml-1',
+    className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
     source: 'rs.svg',
     alt: 'serbia flag',
     width: 20,
     height: 20,
-    className: 'inline ml-1',
+    className: 'inline ml-1 w-[20px] h-[20px]',
   },
 ]
 export const sectionMediaQueries =
@@ -217,7 +217,7 @@ export const displayMediaQueries =
   'w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full'
 
 export const sectionTopDivStyles =
-  'pb-[100px] md:pb-[75px] mainBackgroundPattern shadow-2xl'
+  'pb-[100px] md:pb-[75px] xs:mb-[60px] mainBackgroundPattern shadow-2xl'
 
 export const skillsSubHeaderStyles =
   'smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center'

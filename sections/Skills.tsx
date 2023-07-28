@@ -48,8 +48,8 @@ const Skills = () => {
                 src="/businessImage.png"
                 width={300}
                 height={250}
-                alt="business thumbnail"
-                className="my-0 mx-auto"
+                alt="businessman image"
+                className="my-0 mx-auto w-[300px] h-[250px]"
               />
             </motion.div>
           </div>

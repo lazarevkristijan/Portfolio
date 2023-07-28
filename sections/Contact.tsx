@@ -15,7 +15,11 @@ import { Flag, ContactDetail, Heading } from '../components/index'
 
 const Contact = () => {
   return (
-    <div className={`mont ${sectionTopDivStyles} overflow-hidden`} id="contact">
+    // mb usually xs:60, now 0px so that it connects to the footer (looks better)
+    <div
+      className={`mont ${sectionTopDivStyles} overflow-hidden xs:mb-[0px]`}
+      id="contact"
+    >
       <div className={`${sectionMediaQueries} xs:w-[90%] flex sm:block`}>
         <div className="w-1/2 sm:w-full">
           <Heading title="CONTACT" />

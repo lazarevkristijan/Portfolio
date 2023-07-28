@@ -5,8 +5,10 @@ import { sectionMediaQueries, sectionTopDivStyles } from '@/constants'
 
 const Footer = () => {
   return (
+    // pb usually 100, now 50 because it's the footer and it looks better
+    // mb usually xs:60, now 0 because it's the last section there is nothing below
     <div
-      className={`text-[20px] mont smallCaps ${sectionTopDivStyles} pb-[50px]`}
+      className={`text-[20px] mont smallCaps ${sectionTopDivStyles} pb-[50px] xs:mb-[0px]`}
     >
       <div className={`xs:text-center ${sectionMediaQueries} xs:w-[90%]`}>
         <Link href="#hero">

@@ -33,9 +33,9 @@ const About = () => {
   }
 
   return (
-    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="profile">
+    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="aboutMe">
       <div className={`${sectionMediaQueries} xs:w-[90%]`}>
-        <Heading title="PROFILE" />
+        <Heading title="ABOUT ME" />
         <div
           className={`${aboutTextStyles} xs:mx-auto mt-[80px] md:mt-[60px] mb-[80px] md:mb-[60px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] text-justify`}
         >
@@ -52,11 +52,12 @@ const About = () => {
               working since the age of 13, coming with experience as a sales
               agent, electrician & fitness trainer. since jan 2023 fully
               committed to front end web development. i withhold high level
-              skills in graphics design, computer set-ups & 96 wpm typing speed.
-              i possess good knowledge of the front end environment, how the
-              internet works & a basic understanding of the backend workflow.
-              constantly working on new ideas and learning new skills through
-              projects & books written by the people that have already made it.
+              skills in computer set-ups and it&#39;s ecosystem, graphics design
+              & 96 wpm typing speed. i possess good knowledge of the front end
+              environment, how the internet works & a basic understanding of the
+              back end workflow. constantly working on new ideas and learning
+              new skills through projects & books written by the people that
+              have already made it.
             </p>
           )}
 
@@ -65,11 +66,12 @@ const About = () => {
               working since the age of 13, coming with experience as a sales
               agent, electrician & fitness trainer. since jan 2023 fully
               committed to front end web development. i withhold high level
-              skills in graphics design, computer set-ups & 96 wpm typing speed.
-              i possess good knowledge of the front end environment, how the
-              internet works & a basic understanding of the backend workflow.
-              constantly working on new ideas and learning new skills through
-              projects & books written by the people that have already made it.
+              skills in computer set-ups and it&#39;s ecosystem, graphics design
+              & 96 wpm typing speed. i possess good knowledge of the front end
+              environment, how the internet works & a basic understanding of the
+              back end workflow. constantly working on new ideas and learning
+              new skills through projects & books written by the people that
+              have already made it.
             </p>
           )}
 

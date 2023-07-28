@@ -1,7 +1,7 @@
 import {
   Navbar,
   Hero,
-  About,
+  AboutMe,
   Projects,
   Skills,
   Contact,
@@ -28,7 +28,7 @@ export default function Home() {
           className={`${displayMediaQueries} xs:min-w-[340px] xs:max-w-[420px] my-0 mx-auto`}
         >
           <Hero />
-          <About />
+          <AboutMe />
           <Projects />
           <Skills />
           <Contact />

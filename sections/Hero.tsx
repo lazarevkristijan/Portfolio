@@ -9,7 +9,7 @@ import { sectionMediaQueries, sectionTopDivStyles } from '../constants'
 const Hero = () => {
   return (
     <div
-      className={`${sectionTopDivStyles} pt-[100px] overflow-x-hidden`}
+      className={`${sectionTopDivStyles} pt-[100px]  overflow-x-hidden`}
       id="hero"
     >
       <div className={`${sectionMediaQueries} flex sm:flex-col`}>
