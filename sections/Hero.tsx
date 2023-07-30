@@ -1,3 +1,5 @@
+// Top section to hopefully catch your attention
+
 'use client'
 
 import React from 'react'
@@ -13,6 +15,7 @@ const Hero = () => {
       id="hero"
     >
       <div className={`${sectionMediaQueries} flex sm:flex-col`}>
+        {/* Graduation Pic */}
         <motion.div
           variants={slideIn('left', 'spring', 0, 1)}
           initial="hidden"
@@ -27,12 +30,15 @@ const Hero = () => {
             className="drop-shadow-2xl"
           />
         </motion.div>
+
+        {/* Other pictures */}
         <motion.div
           variants={slideIn('right', 'spring', 0, 1)}
           initial="hidden"
           whileInView="show"
           className="w-2/3 sm:w-full"
         >
+          {/* Image' */}
           <div className="flex justify-center">
             <Image
               src="/headerCodeImage.png"
@@ -42,6 +48,8 @@ const Hero = () => {
               className="mt-[33px] sm:mt-[0px] imageBorder drop-shadow-2xl"
             />
           </div>
+
+          {/* Text */}
           <div className="xl:my-0 xl:mx-auto w-4/5">
             <p className="ps2p text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl ">
               KRISTIJAN

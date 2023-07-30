@@ -1,3 +1,5 @@
+// Index file used to reduce code repetition and keep all the repeating info in one place
+
 export const navText = [
   {
     name: 'about me',

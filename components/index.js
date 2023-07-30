@@ -1,3 +1,5 @@
+// Index File used to make importing / exporting easier
+
 import Heading from './Heading'
 import ProjectCard from './ProjectCard'
 import SkillCard from './SkillCard'

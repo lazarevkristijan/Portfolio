@@ -1,3 +1,5 @@
+// main section where I connect all the sections into one
+
 import {
   Navbar,
   Hero,
@@ -13,6 +15,7 @@ export default function Home() {
   return (
     <main className="textColor w-full">
       <div className="sideBackground">
+        {/* Special section for the infinite navbar */}
         <div
           className="text-center navbarColor w-full
         h-[50px] fixed shadow-2xl z-10"
@@ -23,7 +26,7 @@ export default function Home() {
             <Navbar />
           </div>
         </div>
-
+        {/* Place for all other sections */}
         <div
           className={`${displayMediaQueries} xs:min-w-[340px] xs:max-w-[420px] my-0 mx-auto`}
         >

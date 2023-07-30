@@ -1,3 +1,6 @@
+// Heading component is used on the top of each section to make all section headers look the same
+// Includes default styles which can be slightly overriden to fit the specific needs
+
 import React from 'react'
 
 const Heading = ({ title }: { title: string }) => (

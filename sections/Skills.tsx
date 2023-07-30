@@ -21,7 +21,10 @@ const Skills = () => {
     <div className={`mont ${sectionTopDivStyles} md:pb-[45px]`} id="skills">
       <div className={`${sectionMediaQueries} xs:w-[90%]`}>
         <Heading title="SKILLS" />
+
+        {/* Div for all 3 sections */}
         <div className="mt-[80px] md:mt-[60px] flex flex-wrap">
+          {/* Div for Front End skills */}
           <div className="w-1/3 h-fit lg:w-1/2 md:w-full">
             <p className={`${skillsSubHeaderStyles}`}>FRONT END</p>
             <div className="mt-[30px]">
@@ -30,6 +33,8 @@ const Skills = () => {
               ))}
             </div>
           </div>
+
+          {/* Div for Back End skills */}
           <div className="md:mt-[60px] w-1/3 h-fit lg:w-1/2 md:w-full">
             <p className={`${skillsSubHeaderStyles}`}>BACK END</p>
             <div className="mt-[30px]">
@@ -53,7 +58,10 @@ const Skills = () => {
               />
             </motion.div>
           </div>
+
+          {/* Div for Design skills & certifications*/}
           <div className="lg:mt-[60px] w-1/3 h-fit lg:w-full lg:flex lg:flex-wrap">
+            {/* Design */}
             <div className="lg:w-1/2 md:w-full block">
               <p className={`${skillsSubHeaderStyles}`}>DESIGN</p>
               <div className="mt-[30px]">
@@ -66,6 +74,7 @@ const Skills = () => {
                 ))}
               </div>
             </div>
+            {/* Certifications */}
             <div className="text-right mt-[50px] lg:mt-[0px] lg:w-1/2 md:w-full h-fit flex flex-wrap">
               <div className="text-center md:mt-[60px] w-full">
                 <p className="text-[35px] lg:text-[40px]">CERTIFICATES</p>

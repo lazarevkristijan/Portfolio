@@ -1,3 +1,6 @@
+// Reusable button component used throughout the project. It has a default styling
+// so that there is consistency with the colors, and easier changes if needed
+
 import React from 'react'
 
 const Button = ({

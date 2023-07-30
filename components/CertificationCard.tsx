@@ -1,3 +1,6 @@
+// Reusable card component for for the certifications part of the project
+// Includes default styles which can be slightly overriden to fit the specific needs
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

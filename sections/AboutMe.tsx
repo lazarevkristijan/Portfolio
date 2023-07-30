@@ -10,10 +10,14 @@ import {
   aboutTextStyles,
 } from '@/constants'
 
-const About = () => {
+const AboutMe = () => {
+  // States to show the full introduction text
   const [moreLessText, setMoreLessText] = useState('more')
   const [isFullText, setIsFullText] = useState(true)
 
+  // Function to handle the showing and hiding of the full text
+  // On lg(1020) > the full text gets automatically shown
+  // On lg(1020) < the text is cut in half and a more button appear to show it
   useEffect(() => {
     const handleResize = () => {
       const onLargeRender = window.innerWidth > 1020
@@ -36,6 +40,7 @@ const About = () => {
     <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="aboutMe">
       <div className={`${sectionMediaQueries} xs:w-[90%]`}>
         <Heading title="ABOUT ME" />
+        {/* Div for the text */}
         <div
           className={`${aboutTextStyles} xs:mx-auto mt-[80px] md:mt-[60px] mb-[80px] md:mb-[60px] w-[850px] xl:w-[650px] lg:w-[550px] md:w-[450px] sm:w-[300px] text-justify`}
         >
@@ -101,12 +106,14 @@ const About = () => {
             </span>
           )}
         </div>
+        {/* Div for the image */}
         <div className="my-0 mx-auto w-fit">
           <div className="flex flex-wrap justify-end">
             <Link
               className="flex"
               href="https://dl.dropboxusercontent.com/scl/fi/zbkkh2qhxml55ip4ti65u/Kristijan-Lazarev-CV-ENG.pdf?rlkey=4q793zfc99jhqzontj02lijxf&dl=0"
             >
+              {/* PDF DOWNLOAD */}
               <p className={`${aboutTextStyles}`}>pdf portfolio</p>
               <span className="bg-[#1F1F2D] py-[6px] px-[6px] my-auto ml-1 max-w-fit rounded-full">
                 <Image
@@ -132,4 +139,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutMe

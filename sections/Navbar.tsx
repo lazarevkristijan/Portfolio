@@ -8,6 +8,7 @@ import { navIcons, navText, displayMediaQueries } from '../constants'
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState('')
 
+  // Handle toggling of icons and text
   useEffect(() => {
     function handleWindowSize() {
       if (window.innerWidth <= 420) {
@@ -27,6 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className={`${displayMediaQueries} h-[50px] flex items-center`}>
+      {/* Logo button  */}
       <Link href="#hero">
         <Image
           src="/Klogo.svg"
@@ -36,6 +38,7 @@ const Navbar = () => {
           className="ml-[50px] xl:ml-[40px] lg:ml-[30px] md:ml-[20px] sm:ml-[10px] xs:ml-[20px] md:w-[40px] hover:scale-105 transition-all"
         />
       </Link>
+      {/* Mapping over nav icons and showing either icons for xs screens or text for > xs */}
       <ul className="w-full flex justify-evenly">
         {isMobile === 'true'
           ? navIcons.map((icon, index) => (

@@ -1,3 +1,6 @@
+// Skill Card is used in the skills section to make consistent looking skill bars
+// Includes default styles which can be slightly overriden to fit the specific needs
+
 import Image from 'next/image'
 import React from 'react'
 
@@ -13,7 +16,7 @@ const SkillCard = ({ name, level }: { name: string; level: string }) => {
             alt={`${name} icon`}
             width={20}
             height={20}
-            className="ml-1 inline w-[20px] h-[20px]"
+            className="ml-1 inline w-[20px] h-[20px]w"
           />
         </p>
         <div className="bg-white mt-[15px] w-[280px] h-[35px] rounded-[15px] flex items-center">

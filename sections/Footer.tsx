@@ -14,19 +14,24 @@ const Footer = () => {
         <Link href="#hero">
           <Button title="back to top?" inline />
         </Link>
+        {/* Quote */}
         <p className="leading-5 xs:mx-auto mt-[75px] w-[320px]">
           your only limitation is the one <br />
           which you set up in your own mind. <br />
           -Napoleon Hill
         </p>
+
+        {/* Div for legal stuff */}
         <div className="mt-[30px] flex justify-between md:flex-col-reverse">
           <div className="md:text-center my-auto">
+            {/* Copyrights */}
             <span>
               copyright © kristijan lazarev 2023.
               <br className="lg:inline hidden" /> all rights reserved.
             </span>
           </div>
           <div className="text-center md:flex md:justify-center">
+            {/* Privacy Policy */}
             <Link href="/">
               <Button
                 title="privacy policy"
@@ -35,6 +40,8 @@ const Footer = () => {
                 overridePadding="px-5 py-3 sm:px-2 sm:py-2"
               />
             </Link>
+
+            {/* Terms of Use */}
             <Link href="/">
               <Button
                 title="terms of use"

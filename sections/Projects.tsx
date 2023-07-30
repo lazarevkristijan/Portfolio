@@ -19,6 +19,8 @@ const Projects = () => {
           demonstrating my skills: <br className="md:inline hidden" /> a
           selection of projects
         </p>
+
+        {/* Mapping over all projects */}
         <div className="flex flex-wrap justify-evenly">
           {projects.map((project, index) => (
             <motion.div

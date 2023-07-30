@@ -1,3 +1,6 @@
+// Project Card is used in the skills section to make consistent looking project cards
+// Includes default styles which can be slightly overriden to fit the specific needs
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,6 +22,8 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="text-[20px] md:text-[18px] text-left mont smallCaps md:mb-[50px] xl:mb-[20px] w-[301px] relative">
+      {/* Project image */}
+
       <Image
         src={imgUrl}
         width={350}
@@ -26,6 +31,8 @@ const ProjectCard = ({
         alt={name}
         className="drop-shadow-2xl imageBorder"
       />
+
+      {/* Github logo */}
       <Link
         href={githubUrl}
         target="_blank"
@@ -39,6 +46,8 @@ const ProjectCard = ({
           className="xs:w-[35px]"
         />
       </Link>
+
+      {/* Live site url */}
       <Link
         href={liveUrl}
         target="_blank"
@@ -52,6 +61,8 @@ const ProjectCard = ({
           className="xs:w-[35px]"
         />
       </Link>
+
+      {/* Details */}
       <p>{name}</p>
       <p>{description}</p>
       <p>{tools}</p>

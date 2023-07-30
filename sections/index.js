@@ -1,3 +1,5 @@
+// File to do easier importing / exporting of sections
+
 import Navbar from './Navbar'
 import Hero from './Hero'
 import AboutMe from './AboutMe'
