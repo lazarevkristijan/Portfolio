@@ -4,6 +4,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { hoverStyles } from '@/constants'
 
 const ProjectCard = ({
   name,
@@ -36,7 +37,7 @@ const ProjectCard = ({
       <Link
         href={githubUrl}
         target="_blank"
-        className="bg-white p-[3px] xs:mr-[10px] absolute top-1 right-10 rounded-[15px]"
+        className={`bg-white p-[3px] xs:mr-[10px] absolute top-1 right-10 rounded-[15px] ${hoverStyles}`}
       >
         <Image
           src="/githubLogo.svg"
@@ -51,7 +52,7 @@ const ProjectCard = ({
       <Link
         href={liveUrl}
         target="_blank"
-        className="bg-white p-[3px] absolute top-1 right-1 rounded-[15px]"
+        className={`bg-white p-[3px] absolute top-1 right-1 rounded-[15px] ${hoverStyles}`}
       >
         <Image
           src="/liveUrlButton.svg"

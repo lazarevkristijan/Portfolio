@@ -3,7 +3,12 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { navIcons, navText, displayMediaQueries } from '../constants'
+import {
+  navIcons,
+  navText,
+  displayMediaQueries,
+  hoverStyles,
+} from '../constants'
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState('')
@@ -35,7 +40,7 @@ const Navbar = () => {
           width={45}
           height={45}
           alt="logo"
-          className="ml-[50px] xl:ml-[40px] lg:ml-[30px] md:ml-[20px] sm:ml-[10px] xs:ml-[20px] md:w-[40px] hover:scale-105 transition-all"
+          className={`ml-[50px] xl:ml-[40px] lg:ml-[30px] md:ml-[20px] sm:ml-[10px] xs:ml-[20px] md:w-[40px] ${hoverStyles}`}
         />
       </Link>
       {/* Mapping over nav icons and showing either icons for xs screens or text for > xs */}
@@ -43,7 +48,7 @@ const Navbar = () => {
         {isMobile === 'true'
           ? navIcons.map((icon, index) => (
               <Link href={icon.url} key={index}>
-                <div className="bg-[#1f3a40] active:bg-gray-300 py-2 px-2 rounded-full">
+                <div className="bg-[#1f3a40] active:bg-[#2c5a4c] py-2 px-2 rounded-full">
                   <Image
                     src={icon.fileUrl}
                     alt={icon.name}
@@ -56,7 +61,9 @@ const Navbar = () => {
           : isMobile === 'false'
           ? navText.map((text, index) => (
               <Link href={text.url} key={index}>
-                <li className="smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont hover:scale-105 transition-all text-[#c1ffbf]">
+                <li
+                  className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
+                >
                   {text.name}
                 </li>
               </Link>

@@ -3,7 +3,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Heading, ProjectCard } from '../components/index'
-import { sectionMediaQueries, sectionTopDivStyles, projects } from '@/constants'
+import {
+  sectionMediaQueries,
+  sectionTopDivStyles,
+  projects,
+  hoverStyles,
+} from '@/constants'
 
 const Projects = () => {
   return (
@@ -23,11 +28,7 @@ const Projects = () => {
         {/* Mapping over all projects */}
         <div className="flex flex-wrap justify-evenly">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.8, borderRadius: '100%' }}
-            >
+            <motion.div key={index} className={`${hoverStyles} cursor-auto`}>
               <ProjectCard
                 name={project.name}
                 description={project.description}

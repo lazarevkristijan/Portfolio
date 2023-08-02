@@ -2,6 +2,7 @@
 // so that there is consistency with the colors, and easier changes if needed
 
 import React from 'react'
+import { hoverStyles } from '@/constants'
 
 const Button = ({
   title,
@@ -18,7 +19,7 @@ const Button = ({
     <div
       className={` bg-[#1F1F2D] 
       max-w-fit rounded-full
-      hover:scale-105 transition-all cursor-pointer selection:bg-transparent
+      ${hoverStyles} selection:bg-transparent
       ${margin || ''} 
       ${overridePadding || 'px-5 py-3'}
         ${inline ? 'inline-block' : ''}

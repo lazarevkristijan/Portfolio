@@ -63,7 +63,7 @@ export const projects = [
     name: 'portfolio website',
     description: `the one you're looking at now`,
     tools: 'html / tailwind / react / next / ts / figma',
-    imgUrl: '/portfolioProjectImage.png',
+    imgUrl: '/thisProjectImage.png',
     liveUrl: '',
     githubUrl: 'https://github.com/lazarevkristijan/personal-next-js-portfolio',
   },
@@ -226,3 +226,5 @@ export const skillsSubHeaderStyles =
 
 export const aboutTextStyles =
   'smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px]'
+
+export const hoverStyles = 'hover:scale-105 transition-all cursor-pointer'

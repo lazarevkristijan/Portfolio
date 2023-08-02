@@ -10,6 +10,7 @@ import {
   sectionTopDivStyles,
   flags,
   contactDetails,
+  hoverStyles,
 } from '@/constants'
 import { Flag, ContactDetail, Heading } from '../components/index'
 
@@ -52,7 +53,7 @@ const Contact = () => {
               <br className="hidden lg:inline" /> coding, personal growth
             </p>
           </div>
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
+          <motion.div className={`${hoverStyles}`}>
             <Link
               href="https://www.linkedin.com/in/kristijanlazarev/"
               target="_blank"
@@ -80,7 +81,7 @@ const Contact = () => {
           className="mt-[25px] w-1/2 sm:w-full sm:flex"
         >
           <div className="sm:w-1/2 ">
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
+            <motion.div className={`${hoverStyles}`}>
               <Link href="mailto:lazarevkristijan@gmail.com">
                 <Image
                   src="/gmailLogo.svg"
@@ -93,7 +94,7 @@ const Contact = () => {
             </motion.div>
           </div>
           <div className="sm:w-1/2">
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
+            <motion.div className={`${hoverStyles}`}>
               <Link href="https://github.com/lazarevkristijan" target="_blank">
                 <Image
                   src="/githubLogo.svg"

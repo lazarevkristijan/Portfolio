@@ -1,7 +1,10 @@
-add scrollbar
+ABOUT PICTURE MAKE IT BETTER LOOKING OR TAKE NEW ONE OF BOTH MONITORS
+
+fix about section make it half text half picture
+warnings
+resize contact icons
 
 fix scroll snap
-
 Update CV to be the latest version
 threeshaking?
 MAKE PRIVACY POLICY AND TERMS OF USE
