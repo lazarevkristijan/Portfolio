@@ -7,7 +7,7 @@ import React from 'react'
 const SkillCard = ({ name, level }: { name: string; level: string }) => {
   const skillLevel = level
   return (
-    <div className="text-[20px] smallCaps mt-[25px] flex justify-center">
+    <div className="text-[20px] smallCaps mt-[20px] flex justify-center">
       <div>
         <p>
           {name}

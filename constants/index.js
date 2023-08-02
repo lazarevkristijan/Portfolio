@@ -213,13 +213,12 @@ export const flags = [
   },
 ]
 export const sectionMediaQueries =
-  'w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] my-0 mx-auto'
+  'w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] my-0 mx-auto xs:mt-[50px] xs:w-[90%]'
 
 export const displayMediaQueries =
   'w-[1200px] xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] xs:w-full'
 
-export const sectionTopDivStyles =
-  'pb-[100px] md:pb-[75px] xs:mb-[60px] mainBackgroundPattern shadow-2xl'
+export const sectionTopDivStyles = 'pb-[50px] mainBackgroundPattern shadow-2xl'
 
 export const skillsSubHeaderStyles =
   'smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center'
@@ -228,3 +227,5 @@ export const aboutTextStyles =
   'smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px]'
 
 export const hoverStyles = 'hover:scale-105 transition-all cursor-pointer'
+
+export const contactLogoStyles = 'w-1/3 md:w-fit mx-auto my-auto md:mt-[10px]'

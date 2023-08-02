@@ -26,7 +26,7 @@ const CertificationCard = ({
       <div
         className={`text-[18px] mont smallCaps flex justify-end md:justify-center items-center ${hoverStyles}`}
       >
-        <div className="md:text-center md:mb-[30px]">
+        <div className="md:text-center md:mb-[20px]">
           <div className="bg-white my-0 mx-auto w-[200px] hidden md:block">
             <div className="my-auto mx-auto w-[50px] h-[50px]">
               <Image

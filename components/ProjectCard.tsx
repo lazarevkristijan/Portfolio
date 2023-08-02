@@ -22,7 +22,7 @@ const ProjectCard = ({
   githubUrl: string
 }) => {
   return (
-    <div className="text-[20px] md:text-[18px] text-left mont smallCaps md:mb-[50px] xl:mb-[20px] w-[301px] relative">
+    <div className="text-[20px] md:text-[18px] text-left mont smallCaps xl:mb-[20px] w-[301px] relative">
       {/* Project image */}
 
       <Image

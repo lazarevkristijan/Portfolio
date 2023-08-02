@@ -11,7 +11,7 @@ import { sectionMediaQueries, sectionTopDivStyles } from '../constants'
 const Hero = () => {
   return (
     <div
-      className={`${sectionTopDivStyles} pt-[100px]  overflow-x-hidden`}
+      className={`${sectionTopDivStyles} pt-[100px] xs:pt-[50px]  overflow-x-hidden`}
       id="hero"
     >
       <div className={`${sectionMediaQueries} flex sm:flex-col`}>
@@ -45,7 +45,7 @@ const Hero = () => {
               alt="Header Code Image"
               width={535}
               height={181}
-              className="mt-[33px] sm:mt-[0px] imageBorder drop-shadow-2xl"
+              className="mt-[33px] sm:mt-0 imageBorder drop-shadow-2xl"
             />
           </div>
 

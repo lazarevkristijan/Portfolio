@@ -14,7 +14,7 @@ import { displayMediaQueries } from '@/constants'
 export default function Home() {
   return (
     <main className="textColor w-full">
-      <div className="sideBackground">
+      <div className="sideBackground min-w-[340px]">
         {/* Special section for the infinite navbar */}
         <div
           className="text-center navbarColor w-full

@@ -8,14 +8,14 @@ const Footer = () => {
     // pb usually 100, now 50 because it's the footer and it looks better
     // mb usually xs:60, now 0 because it's the last section there is nothing below
     <div
-      className={`text-[20px] mont smallCaps ${sectionTopDivStyles} pb-[50px] xs:mb-[0px]`}
+      className={`text-[20px] mont smallCaps ${sectionTopDivStyles} pt-[50px]`}
     >
-      <div className={`xs:text-center ${sectionMediaQueries} xs:w-[90%]`}>
+      <div className={`xs:text-center ${sectionMediaQueries} xs:mt-0`}>
         <Link href="#hero">
           <Button title="back to top?" inline />
         </Link>
         {/* Quote */}
-        <p className="leading-5 xs:mx-auto mt-[75px] w-[320px]">
+        <p className="leading-5 xs:mx-auto mt-[50px] w-[320px]">
           your only limitation is the one <br />
           which you set up in your own mind. <br />
           -Napoleon Hill
