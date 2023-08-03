@@ -65,7 +65,8 @@ const Contact = () => {
                 width={150}
                 height={150}
                 alt="gmail logo"
-                className={`${hoverStyles} drop-shadow-2xl md:w-[100px]`}
+                // Duplicate w & h, cos console warnings
+                className={`${hoverStyles} drop-shadow-2xl md:w-[100px] w-[150px] h-[150px]`}
               />
             </Link>
           </div>

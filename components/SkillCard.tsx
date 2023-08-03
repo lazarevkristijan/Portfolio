@@ -16,7 +16,8 @@ const SkillCard = ({ name, level }: { name: string; level: string }) => {
             alt={`${name} icon`}
             width={20}
             height={20}
-            className="ml-1 inline w-[20px] h-[20px]w"
+            // duplicate w & h, because console warnings apperently
+            className="ml-1 inline w-[20px] h-[20px]"
           />
         </p>
         <div className="bg-white mt-[15px] w-[280px] h-[35px] rounded-[15px] flex items-center">

@@ -1,8 +1,9 @@
-make p tag reusable on pdf portfolio
-warnings 
+check again warnings 
 
+add changes - new components new widths sizes to structure
 fix scroll snap
 Update CV to be the latest version
+check warnings last time
 threeshaking?
 MAKE PRIVACY POLICY AND TERMS OF USE
 
@@ -18,6 +19,9 @@ The project consists of 5 main sections
 There are 2 smaller sections
 1. Navbar
 2. Footer
+
+Having green as the main color, I've put around
+different shades of green to make it look spontaneous
 
 //
 

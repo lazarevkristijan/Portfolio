@@ -3,12 +3,13 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Heading, Button } from '../components/index'
+import { Heading, Button, PortfolioDownloader } from '../components/index'
 import {
   sectionMediaQueries,
   sectionTopDivStyles,
   aboutTextStyles,
   hoverStyles,
+  aboutMoreText,
 } from '@/constants'
 
 const AboutMe = () => {
@@ -66,50 +67,13 @@ const AboutMe = () => {
             </p>
 
             {isFullText && (
-              <p className="mt-[20px] lg:hidden">
-                working since the age of 13, coming with experience as a sales
-                agent, electrician & fitness trainer. since jan 2023 fully
-                committed to front end web development. i withhold high level
-                skills in computer set-ups and it&#39;s ecosystem, graphics
-                design & 96 wpm typing speed. i possess good knowledge of the
-                front end environment, how the internet works & a basic
-                understanding of the back end workflow. constantly working on
-                new ideas and learning new skills through projects & books
-                written by the people that have already made it.
-              </p>
+              <p className="mt-[20px] lg:hidden">{aboutMoreText}</p>
             )}
 
             {moreLessText === 'less' && isFullText == false && (
               <>
-                <p className={`mt-[20px] hidden lg:block`}>
-                  working since the age of 13, coming with experience as a sales
-                  agent, electrician & fitness trainer. since jan 2023 fully
-                  committed to front end web development. i withhold high level
-                  skills in computer set-ups and it&#39;s ecosystem, graphics
-                  design & 96 wpm typing speed. i possess good knowledge of the
-                  front end environment, how the internet works & a basic
-                  understanding of the back end workflow. constantly working on
-                  new ideas and learning new skills through projects & books
-                  written by the people that have already made it.
-                </p>
-                <Link
-                  className="flex"
-                  href="https://dl.dropboxusercontent.com/scl/fi/zbkkh2qhxml55ip4ti65u/Kristijan-Lazarev-CV-ENG.pdf?rlkey=4q793zfc99jhqzontj02lijxf&dl=0"
-                >
-                  {/* PDF DOWNLOAD */}
-                  <p
-                    className={`${aboutTextStyles} text-white bg-[#1F1F2D] px-2 rounded-md ${hoverStyles}`}
-                  >
-                    pdf portfolio
-                    <Image
-                      src="/download-button.svg"
-                      width={15}
-                      height={15}
-                      alt="download button"
-                      className="inline ml-2"
-                    />
-                  </p>
-                </Link>
+                <p className={`mt-[20px] hidden lg:block`}>{aboutMoreText}</p>
+                <PortfolioDownloader />
               </>
             )}
 
@@ -152,25 +116,7 @@ const AboutMe = () => {
                 className="mt-[27px] ml-auto lg:mx-auto mr-0 lg:w-1/3 object-cover imageBorder"
               />
               <div className="flex flex-wrap justify-end lg:justify-center">
-                <Link
-                  className="flex"
-                  href="https://dl.dropboxusercontent.com/scl/fi/zbkkh2qhxml55ip4ti65u/Kristijan-Lazarev-CV-ENG.pdf?rlkey=4q793zfc99jhqzontj02lijxf&dl=0"
-                >
-                  {/* PDF DOWNLOAD */}
-
-                  <p
-                    className={`${aboutTextStyles} text-white bg-[#1F1F2D] px-2 rounded-md ${hoverStyles}`}
-                  >
-                    pdf portfolio
-                    <Image
-                      src="/download-button.svg"
-                      width={15}
-                      height={15}
-                      alt="download button"
-                      className="inline ml-2"
-                    />
-                  </p>
-                </Link>
+                <PortfolioDownloader />
               </div>
             </div>
           )}

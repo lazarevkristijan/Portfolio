@@ -7,6 +7,7 @@ import CertificationCard from './CertificationCard'
 import Button from './Button'
 import Flag from './Flag'
 import ContactDetail from './ContactDetail'
+import PortfolioDownloader from './PortfolioDownloader'
 
 export {
   Heading,
@@ -16,4 +17,5 @@ export {
   Button,
   Flag,
   ContactDetail,
+  PortfolioDownloader,
 }

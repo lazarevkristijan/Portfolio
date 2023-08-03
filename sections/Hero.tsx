@@ -24,7 +24,7 @@ const Hero = () => {
         >
           <Image
             src="/gradpic.png"
-            alt="Main Pic"
+            alt="Graduation Pic"
             width={409}
             height={614}
             className="drop-shadow-2xl"
@@ -44,7 +44,7 @@ const Hero = () => {
               src="/headerCodeImage.png"
               alt="Header Code Image"
               width={535}
-              height={181}
+              height={158}
               className="mt-[33px] sm:mt-0 imageBorder drop-shadow-2xl"
             />
           </div>
