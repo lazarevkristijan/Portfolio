@@ -1,4 +1,4 @@
-// Index File used to make importing / exporting easier
+// Index File used to make importing / exporting components easier
 
 import Heading from './Heading'
 import ProjectCard from './ProjectCard'

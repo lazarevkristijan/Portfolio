@@ -14,20 +14,19 @@ const Button = ({
   inline?: boolean
   margin?: string
   overridePadding?: string
-}) => {
-  return (
-    <div
-      className={` bg-[#1F1F2D] 
+}) => (
+  // Optional editing capabilities of the button
+  <div
+    className={` bg-[#1F1F2D] 
       max-w-fit rounded-full
       ${hoverStyles} selection:bg-transparent
       ${margin || ''} 
       ${overridePadding || 'px-5 py-3'}
         ${inline ? 'inline-block' : ''}
          `}
-    >
-      {title}
-    </div>
-  )
-}
+  >
+    {title}
+  </div>
+)
 
 export default Button

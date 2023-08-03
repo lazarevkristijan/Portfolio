@@ -7,12 +7,16 @@ import React from 'react'
 const SkillCard = ({ name, level }: { name: string; level: string }) => {
   const skillLevel = level
   return (
+    // Rectangle - progress bar
     <div className="text-[20px] smallCaps mt-[20px] flex justify-center">
       <div>
+        {/* Skill name */}
         <p>
           {name}
+
+          {/* Skill logo */}
           <Image
-            src={`${name}.svg`}
+            src={`/skillIcons/${name}.svg`}
             alt={`${name} icon`}
             width={20}
             height={20}
@@ -21,6 +25,7 @@ const SkillCard = ({ name, level }: { name: string; level: string }) => {
           />
         </p>
         <div className="bg-white mt-[15px] w-[280px] h-[35px] rounded-[15px] flex items-center">
+          {/* Skill level represented by width of this div on top how long it stretches across the progress bar going from bad to good (NOT to perfect as it usually is used as) */}
           <div
             className={`bg-[#59747b] ml-[4px] mr-[4px] ${skillLevel} h-[27px] rounded-[15px]`}
           ></div>

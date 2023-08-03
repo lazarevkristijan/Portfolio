@@ -5,21 +5,23 @@ import { aboutTextStyles, hoverStyles } from '@/constants'
 
 const PortfolioDownloader = () => {
   return (
+    // Link that will redirect and directly download the CV
     <Link
       className="flex"
-      href="https://dl.dropboxusercontent.com/scl/fi/zbkkh2qhxml55ip4ti65u/Kristijan-Lazarev-CV-ENG.pdf?rlkey=4q793zfc99jhqzontj02lijxf&dl=0"
+      href="https://www.dropbox.com/scl/fi/3el0qsvttkenzs6xxu7dr/Kristijan-Lazarev-CV.pdf?dl=0&rlkey=zr8gkkm24i5n1q7hrvcjkpn21"
+      target="_blank"
     >
-      {/* PDF DOWNLOAD */}
       <p
         className={`${aboutTextStyles} bg-[#1F1F2D] px-2 rounded-md ${hoverStyles}`}
       >
         pdf portfolio
+        {/* Download Icon */}
         <Image
-          src="/download-button.svg"
+          src="/mediaIcons/eye.svg"
           width={15}
           height={15}
           alt="download button"
-          className="inline ml-2"
+          className="inline ml-1"
         />
       </p>
     </Link>

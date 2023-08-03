@@ -26,6 +26,7 @@ export default function Home() {
             <Navbar />
           </div>
         </div>
+
         {/* Place for all other sections */}
         <div
           className={`${displayMediaQueries} xs:min-w-[340px] xs:max-w-[420px] my-0 mx-auto`}

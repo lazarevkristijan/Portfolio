@@ -11,6 +11,7 @@ import {
 } from '../constants'
 
 const Navbar = () => {
+  // State for on/off mobile mode (just icons instead of text on navbar)
   const [isMobile, setIsMobile] = useState('')
 
   // Handle toggling of icons and text
@@ -31,10 +32,26 @@ const Navbar = () => {
     }
   }, [])
 
+  useEffect(() => {
+    let url = window.location.href.split('/')
+    let target = url[url.length - 1].toLowerCase()
+    let element = document.getElementById(target)
+    element && element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [])
+
   return (
     <nav className={`${displayMediaQueries} h-[50px] flex items-center`}>
       {/* Logo button  */}
-      <Link href="#hero">
+      <Link
+        href="/"
+        onClick={(e) => {
+          let section = document.getElementById('hero')
+          e.preventDefault()
+          section &&
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          window.history.pushState({}, '', `/#hero`)
+        }}
+      >
         <Image
           src="/Klogo.svg"
           width={45}
@@ -47,7 +64,20 @@ const Navbar = () => {
       <ul className="w-full flex justify-evenly">
         {isMobile === 'true'
           ? navIcons.map((icon, index) => (
-              <Link href={icon.url} key={index}>
+              <Link
+                href="/"
+                key={index}
+                onClick={(e) => {
+                  let section = document.getElementById(icon.name)
+                  e.preventDefault()
+                  section &&
+                    section.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    })
+                  window.history.pushState({}, '', `/${icon.url}`)
+                }}
+              >
                 <div className="bg-[#1f3a40] active:bg-[#2c5a4c] py-2 px-2 rounded-full">
                   <Image
                     src={icon.fileUrl}
@@ -60,7 +90,20 @@ const Navbar = () => {
             ))
           : isMobile === 'false'
           ? navText.map((text, index) => (
-              <Link href={text.url} key={index}>
+              <Link
+                href="/"
+                key={index}
+                onClick={(e) => {
+                  let section = document.getElementById(text.name)
+                  e.preventDefault()
+                  section &&
+                    section.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    })
+                  window.history.pushState({}, '', `/${text.url}`)
+                }}
+              >
                 <li
                   className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
                 >

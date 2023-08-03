@@ -1,6 +1,4 @@
 // Flag component is used in the Contact section to make the languages I speak
-// look more interesting
-// Includes default styles which can be slightly overriden to fit the specific needs
 
 import React from 'react'
 import Image from 'next/image'

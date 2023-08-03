@@ -2,7 +2,7 @@
 
 export const navText = [
   {
-    name: 'about me',
+    name: 'about_me',
     url: '#aboutMe',
   },
   {
@@ -21,24 +21,24 @@ export const navText = [
 
 export const navIcons = [
   {
-    name: 'aboutMe',
+    name: 'about_me',
     url: '#aboutMe',
-    fileUrl: '/aboutMeIcon.svg',
+    fileUrl: '/navIcons/aboutMeIcon.svg',
   },
   {
     name: 'projects',
     url: '#projects',
-    fileUrl: '/projectsIcon.svg',
+    fileUrl: '/navIcons/projectsIcon.svg',
   },
   {
     name: 'skills',
     url: '#skills',
-    fileUrl: '/skillsIcon.svg',
+    fileUrl: '/navIcons/skillsIcon.svg',
   },
   {
     name: 'contact',
     url: '#contact',
-    fileUrl: '/contactIcon.svg',
+    fileUrl: '/navIcons/contactIcon.svg',
   },
 ]
 
@@ -47,7 +47,7 @@ export const projects = [
     name: 'calculator',
     description: 'calc app with dark mode',
     tools: 'html / css / js',
-    imgUrl: '/calculatorProjectImage.png',
+    imgUrl: '/projectImages/calculatorProjectImage.png',
     liveUrl: 'https://calculator-app-mq64.onrender.com/',
     githubUrl: 'https://github.com/lazarevkristijan/Calculator-App',
   },
@@ -55,7 +55,7 @@ export const projects = [
     name: 'exotic exposure',
     description: 'luxury car website ~ pintrest',
     tools: 'html / css / js',
-    imgUrl: '/exoticProjectImage.png',
+    imgUrl: '/projectImages/exoticProjectImage.png',
     liveUrl: 'https://exotic-exposure.onrender.com/',
     githubUrl: 'https://github.com/lazarevkristijan/Exotic-Exposure',
   },
@@ -63,7 +63,7 @@ export const projects = [
     name: 'portfolio website',
     description: `the one you're looking at now`,
     tools: 'html / tailwind / react / next / ts / figma',
-    imgUrl: '/thisProjectImage.png',
+    imgUrl: '/projectImages/thisProjectImage.png',
     liveUrl: '',
     githubUrl: 'https://github.com/lazarevkristijan/personal-next-js-portfolio',
   },
@@ -136,7 +136,7 @@ export const certifications = [
     issuer: 'udemy',
     issueDate: '06/2023',
     skillsLearnt: 'html/css/js/react/mongo/express',
-    issuerLogo: '/udemy.png',
+    issuerLogo: '/otherImages/udemy.png',
     linkToCertification:
       'https://www.udemy.com/certificate/UC-3dfb06f6-a5e1-475a-9589-3c1864d72bab/',
   },
@@ -145,7 +145,7 @@ export const certifications = [
     issuer: 'udemy',
     issueDate: '06/2023',
     skillsLearnt: 'communication',
-    issuerLogo: '/udemy.png',
+    issuerLogo: '/otherImages/udemy.png',
     linkToCertification:
       'https://www.udemy.com/certificate/UC-8ccfeb90-84ac-42b7-882a-113efcd8bd4c/',
   },
@@ -154,7 +154,7 @@ export const certifications = [
     issuer: 'udemy',
     issueDate: '05/2023',
     skillsLearnt: 'problem solving',
-    issuerLogo: '/udemy.png',
+    issuerLogo: '/otherImages/udemy.png',
     linkToCertification:
       'https://www.udemy.com/certificate/UC-e103957c-c162-4f32-90c5-f8ff86b00b94/',
   },
@@ -177,35 +177,35 @@ export const contactDetails = [
 
 export const flags = [
   {
-    source: 'us.svg',
+    source: '/flags/us.svg',
     alt: 'usa flag',
     width: 20,
     height: 20,
     className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
-    source: 'de.svg',
+    source: '/flags/de.svg',
     alt: 'germany flag',
     width: 20,
     height: 20,
     className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
-    source: 'mk.svg',
+    source: '/flags/mk.svg',
     alt: 'macedonia flag',
     width: 20,
     height: 20,
     className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
-    source: 'bg.svg',
+    source: '/flags/bg.svg',
     alt: 'bulgaria flag',
     width: 20,
     height: 20,
     className: 'inline ml-1 w-[20px] h-[20px]',
   },
   {
-    source: 'rs.svg',
+    source: '/flags/rs.svg',
     alt: 'serbia flag',
     width: 20,
     height: 20,
