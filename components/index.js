@@ -8,6 +8,7 @@ import Button from './Button'
 import Flag from './Flag'
 import ContactDetail from './ContactDetail'
 import PortfolioDownloader from './PortfolioDownloader'
+import CustomHead from './CustomHead'
 
 export {
   Heading,
@@ -18,4 +19,5 @@ export {
   Flag,
   ContactDetail,
   PortfolioDownloader,
+  CustomHead,
 }
