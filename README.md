@@ -1,3 +1,5 @@
+// Project in progress ~95%
+
 The project consists of 5 main sections
 
 1. Hero
