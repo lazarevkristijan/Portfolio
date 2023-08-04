@@ -59,7 +59,7 @@ export const projects = [
     name: 'exotic exposure',
     description: 'luxury car website ~ pintrest',
     tools: 'html / css / js',
-    imgUrl: '/projectImages/exoticProjectImage.png',
+    imgUrl: '/projectImages/calculatorProjectImage.png',
     liveUrl: 'https://exotic-exposure.onrender.com/',
     githubUrl: 'https://github.com/lazarevkristijan/Exotic-Exposure',
   },
