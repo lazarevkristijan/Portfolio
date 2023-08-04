@@ -237,7 +237,7 @@ export const contactLogoStyles = 'w-1/3 md:w-fit mx-auto my-auto md:mt-[10px]'
 export const aboutMoreText = `working since the age of 13, coming with experience as a sales
 agent, electrician & fitness trainer. since jan 2023 fully
 committed to front end web development. i withhold high level
-skills in computer set-ups and it&#39;s ecosystem, graphics
+skills in computer set-ups and it's ecosystem, graphics
 design & 96 wpm typing speed. i possess good knowledge of the
 front end environment, how the internet works & a basic
 understanding of the back end workflow. constantly working on
