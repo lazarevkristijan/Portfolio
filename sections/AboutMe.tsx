@@ -39,7 +39,7 @@ const AboutMe = () => {
   }
 
   return (
-    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="about_me">
+    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="aboutMe">
       <div className={`${sectionMediaQueries}`}>
         <Heading title="ABOUT ME" />
         {/* Div for the text */}

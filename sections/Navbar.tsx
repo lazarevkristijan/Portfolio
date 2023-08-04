@@ -94,7 +94,7 @@ const Navbar = () => {
                 href="/"
                 key={index}
                 onClick={(e) => {
-                  let section = document.getElementById(text.name)
+                  let section = document.getElementById(text.sectionName)
                   e.preventDefault()
                   section &&
                     section.scrollIntoView({

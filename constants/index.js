@@ -2,19 +2,23 @@
 
 export const navText = [
   {
-    name: 'about_me',
+    name: 'about me',
+    sectionName: 'aboutMe',
     url: '#aboutMe',
   },
   {
     name: 'projects',
+    sectionName: 'projects',
     url: '#projects',
   },
   {
     name: 'skills',
+    sectionName: 'skills',
     url: '#skills',
   },
   {
     name: 'contact',
+    sectionName: 'contact',
     url: '#contact',
   },
 ]
