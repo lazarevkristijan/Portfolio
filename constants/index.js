@@ -51,7 +51,7 @@ export const projects = [
     name: 'calculator',
     description: 'calc app with dark mode',
     tools: 'html / css / js',
-    imgUrl: '/projectImages/calculatorProjectImage.jpg',
+    imgUrl: '/projectImages/calculatorProjectImage.png',
     liveUrl: 'https://calculator-app-mq64.onrender.com/',
     githubUrl: 'https://github.com/lazarevkristijan/Calculator-App',
   },
