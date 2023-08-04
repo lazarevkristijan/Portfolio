@@ -32,6 +32,7 @@ const Navbar = () => {
     }
   }, [])
 
+  // Smooth scrolling functionality
   useEffect(() => {
     let url = window.location.href.split('/')
     let target = url[url.length - 1].toLowerCase()
