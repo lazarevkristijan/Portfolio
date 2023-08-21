@@ -49,7 +49,7 @@ export const navIcons = [
 export const projects = [
   {
     name: "admin dashboard",
-    description: `Sales dash - In progress`,
+    description: `sales dash - in progress`,
     tools: "react / ts / tailwind / figma",
     imgUrl: "/projectImages/dashboardProjectImage.jpg",
     liveUrl: "",
