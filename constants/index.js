@@ -52,7 +52,7 @@ export const projects = [
     description: `sales dash - in progress`,
     tools: "react / ts / tailwind / figma",
     imgUrl: "/projectImages/dashboardProjectImage.jpg",
-    liveUrl: "",
+    liveUrl: "https://sales-dashboard-eight.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/sales-dashboard",
   },
   {
