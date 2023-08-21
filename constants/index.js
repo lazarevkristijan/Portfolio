@@ -51,7 +51,7 @@ export const projects = [
     name: "admin dashboard",
     description: `Sales dash - In progress`,
     tools: "react / ts / tailwind / figma",
-    imgUrl: "/projectImages/dashboardProjectImage.png",
+    imgUrl: "/projectImages/dashboardProjectImage.jpg",
     liveUrl: "",
     githubUrl: "https://github.com/lazarevkristijan/sales-dashboard",
   },
