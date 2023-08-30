@@ -52,7 +52,7 @@ export const projects = [
     description: `sales dash - in progress`,
     tools: "react / ts / tailwind / figma",
     imgUrl: "/projectImages/dashboardProjectImage.jpg",
-    liveUrl: "",
+    liveUrl: "https://sales-dashboard-eight.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/sales-dashboard",
   },
   {
@@ -68,7 +68,7 @@ export const projects = [
     description: `the one you're looking at now`,
     tools: "html / tailwind / react / next / ts / figma",
     imgUrl: "/projectImages/thisProjectImage.png",
-    liveUrl: "https://kristijan-lazarev-portfolio.vercel.app/",
+    liveUrl: "https://kristijan-lazarev.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/personal-next-js-portfolio",
   },
   {
