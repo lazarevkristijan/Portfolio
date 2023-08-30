@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Press+Start+2P&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,7 +13,7 @@
 
 /* Montserrat font family */
 .mont {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Small caps text variant */
@@ -23,7 +23,7 @@
 
 /* Hero page header text font */
 .ps2p {
-  font-family: 'Press Start 2P', 'Montserrat', sans-serif;
+  font-family: "Press Start 2P", "Montserrat", sans-serif;
 }
 
 /* Navbar background color */
