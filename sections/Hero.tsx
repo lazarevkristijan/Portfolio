@@ -1,12 +1,12 @@
 // Top section to hopefully catch your attention
 
-'use client'
+"use client"
 
-import React from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { slideIn } from '../utils/motion'
-import { sectionMediaQueries, sectionTopDivStyles } from '../constants'
+import React from "react"
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { slideIn } from "../utils/motion"
+import { sectionMediaQueries, sectionTopDivStyles } from "../constants"
 
 const Hero = () => (
   <div
@@ -16,7 +16,7 @@ const Hero = () => (
     <div className={`${sectionMediaQueries} flex sm:flex-col`}>
       {/* Graduation Pic */}
       <motion.div
-        variants={slideIn('left', 'spring', 0, 1)}
+        variants={slideIn("left", "spring", 0, 1)}
         initial="hidden"
         whileInView="show"
         className="w-1/3 sm:w-full"
@@ -32,7 +32,7 @@ const Hero = () => (
 
       {/* Decorative pictures */}
       <motion.div
-        variants={slideIn('right', 'spring', 0, 1)}
+        variants={slideIn("right", "spring", 0, 1)}
         initial="hidden"
         whileInView="show"
         className="w-2/3 sm:w-full"
@@ -50,14 +50,14 @@ const Hero = () => (
 
         {/* Text */}
         <div>
-          <p className="ps2p text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl">
+          <h1 className="ps2p text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl">
             KRISTIJAN
             <br />
             LAZAREV <br />
             <span className="mont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[25px] sm:text-[15px]">
               WEB DEVELOPER
             </span>
-          </p>
+          </h1>
         </div>
       </motion.div>
     </div>
