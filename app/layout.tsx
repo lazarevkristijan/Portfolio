@@ -1,8 +1,9 @@
-import './globals.css'
-import type { Metadata } from 'next'
+import "./globals.css"
+import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
-  title: 'Kristijan | Portfolio',
+  title: "Kristijan | Portfolio",
   description: `Kristijan Lazarev's Portfolio`,
 }
 
@@ -13,8 +14,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="xGaVyTW-r0PGDBYOxdL25Ev8NuSQFn4milwybHfsiig" />
-      <body>{children}</body>
+      <meta
+        name="google-site-verification"
+        content="xGaVyTW-r0PGDBYOxdL25Ev8NuSQFn4milwybHfsiig"
+      />
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
