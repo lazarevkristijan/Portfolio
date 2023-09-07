@@ -1,4 +1,4 @@
-The project consists of 5 main sections
+# The project consists of 5 main sections
 
 1. Hero
 2. AboutMe
@@ -6,7 +6,7 @@ The project consists of 5 main sections
 4. Skills
 5. Contact
 
-There are 2 smaller sections
+# There are 2 smaller sections
 
 1. Navbar
 2. Footer
