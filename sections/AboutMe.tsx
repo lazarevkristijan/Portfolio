@@ -60,7 +60,7 @@ const AboutMe = () => {
             )}
 
             <p>
-              KRISTIJAN, a 20 years old boy, overfilled with enthusiasm &
+              KRISTIJAN, a 20 y/o, overfilled with enthusiasm &
               craving for success. i accept every challenge as an opportunity
               for personal, professional growth & development. love taking
               risks, improving my mind, my body & health, making life purposely
