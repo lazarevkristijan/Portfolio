@@ -71,14 +71,6 @@ export const projects = [
     liveUrl: "https://kristijan-lazarev.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/personal-next-js-portfolio",
   },
-  {
-    name: "calculator",
-    description: "calc app with dark mode",
-    tools: "html / css / js",
-    imgUrl: "/projectImages/calculatorProjectImage.png",
-    liveUrl: "https://calculator-app-mq64.onrender.com/",
-    githubUrl: "https://github.com/lazarevkristijan/Calculator-App",
-  },
 ]
 
 export const frontEndSkills = [
