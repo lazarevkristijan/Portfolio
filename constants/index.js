@@ -87,24 +87,28 @@ export const frontEndSkills = [
     level: "w-4/5",
   },
   {
+    name: "typescript",
+    level: "w-4/5",
+  },
+  {
     name: "react",
-    level: "w-3/5",
+    level: "w-4/5",
   },
   {
     name: "next.js",
     level: "w-3/5",
   },
   {
-    name: "typescript",
-    level: "w-4/5",
-  },
-  {
     name: "tailwind",
-    level: "w-4/5",
+    level: "w-full",
   },
 ]
 
 export const backEndSkills = [
+  {
+    name: "linux",
+    level: "w-4/5",
+  },
   {
     name: "node.js",
     level: "w-1/2",
@@ -125,12 +129,12 @@ export const designSkills = [
     level: "w-full",
   },
   {
-    name: "illustrator",
-    level: "w-3/5",
-  },
-  {
     name: "figma",
     level: "w-4/5",
+  },
+  {
+    name: "illustrator",
+    level: "w-3/5",
   },
 ]
 
@@ -234,12 +238,5 @@ export const hoverStyles = "hover:scale-105 transition-all cursor-pointer"
 
 export const contactLogoStyles = "w-1/3 md:w-fit mx-auto my-auto md:mt-[10px]"
 
-export const aboutMoreText = `working since the age of 13, coming with experience as a sales
-agent, electrician & fitness trainer. since jan 2023 fully
-committed to front end web development. i withhold high level
-skills in computer set-ups and it's ecosystem, graphics
-design & 96 wpm typing speed. i possess good knowledge of the
-front end environment, how the internet works & a basic
-understanding of the back end workflow. constantly working on
-new ideas and learning new skills through projects & books
-written by the people that have already made it.`
+export const aboutMoreText =
+  "My knowledge persists of an advanced understanding of the PC ecosystem, Graphics Design and Web Engineering software, my mother language is JavaScript, but I speak 5 other languages too. My ultimate goal is to create / be a part of an innovation that will change the world for the better."

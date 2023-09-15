@@ -1,9 +1,9 @@
-'use client'
+"use client"
 
-import React from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { Heading, SkillCard, CertificationCard } from '../components/index'
+import React from "react"
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { Heading, SkillCard, CertificationCard } from "../components/index"
 import {
   frontEndSkills,
   backEndSkills,
@@ -12,12 +12,15 @@ import {
   skillsSubHeaderStyles,
   sectionMediaQueries,
   sectionTopDivStyles,
-} from '@/constants'
-import { slideIn } from '@/utils/motion'
+} from "@/constants"
+import { slideIn } from "@/utils/motion"
 
 const Skills = () => (
   // pb usually 50px, now 30 because ceritifcation cards have 20px margin bottom
-  <div className={`mont ${sectionTopDivStyles} md:pb-[30px]`} id="skills">
+  <div
+    className={`mont ${sectionTopDivStyles} md:pb-[30px]`}
+    id="skills"
+  >
     <div className={`${sectionMediaQueries}`}>
       <Heading title="SKILLS" />
 
@@ -29,7 +32,11 @@ const Skills = () => (
           <div className="-mt-[20px]">
             {/* Mapping over Front End skills */}
             {frontEndSkills.map((skill, index) => (
-              <SkillCard name={skill.name} level={skill.level} key={index} />
+              <SkillCard
+                name={skill.name}
+                level={skill.level}
+                key={index}
+              />
             ))}
           </div>
         </div>
@@ -40,15 +47,19 @@ const Skills = () => (
           <div className="-mt-[20px]">
             {/* Mapping over Back End Skills */}
             {backEndSkills.map((skill, index) => (
-              <SkillCard name={skill.name} level={skill.level} key={index} />
+              <SkillCard
+                name={skill.name}
+                level={skill.level}
+                key={index}
+              />
             ))}
           </div>
           <motion.div
-            variants={slideIn('up', 'spring', 0, 1)}
+            variants={slideIn("up", "spring", 0, 1)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="mt-[130px] lg:mt-[50px]"
+            className="mt-[50px]"
           >
             {/* Business image / skilled person illustration */}
             <Image
@@ -56,7 +67,7 @@ const Skills = () => (
               width={300}
               height={250}
               alt="businessman image"
-              className="my-0 mx-auto w-[300px] h-[250px]"
+              className="mx-auto w-[300px] h-[250px]"
             />
           </motion.div>
         </div>
@@ -69,7 +80,11 @@ const Skills = () => (
             <div className="-mt-[20px]">
               {/* Mapping over Design skills */}
               {designSkills.map((skill, index) => (
-                <SkillCard name={skill.name} level={skill.level} key={index} />
+                <SkillCard
+                  name={skill.name}
+                  level={skill.level}
+                  key={index}
+                />
               ))}
             </div>
           </div>

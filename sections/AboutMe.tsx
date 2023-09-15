@@ -1,20 +1,18 @@
-'use client'
+"use client"
 
-import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Heading, Button, PortfolioDownloader } from '../components/index'
+import React, { useEffect, useState } from "react"
+import Image from "next/image"
+import { Heading, Button, PortfolioDownloader } from "../components/index"
 import {
   sectionMediaQueries,
   sectionTopDivStyles,
   aboutTextStyles,
-  hoverStyles,
   aboutMoreText,
-} from '@/constants'
+} from "@/constants"
 
 const AboutMe = () => {
   // States to show the full introduction text
-  const [moreLessText, setMoreLessText] = useState('more')
+  const [moreLessText, setMoreLessText] = useState("more")
   const [isFullText, setIsFullText] = useState(true)
 
   // Function to handle the showing and hiding of the full text
@@ -27,19 +25,22 @@ const AboutMe = () => {
     }
     handleResize()
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener("resize", handleResize)
     }
   }, [])
 
   const handleMoreLessOption = () => {
-    setMoreLessText((prev) => (prev === 'more' ? 'less' : 'more'))
+    setMoreLessText((prev) => (prev === "more" ? "less" : "more"))
   }
 
   return (
-    <div className={`mont xs:text-center ${sectionTopDivStyles}`} id="aboutMe">
+    <div
+      className={`mont xs:text-center ${sectionTopDivStyles}`}
+      id="aboutMe"
+    >
       <div className={`${sectionMediaQueries}`}>
         <Heading title="ABOUT ME" />
         {/* Div for the text */}
@@ -60,11 +61,11 @@ const AboutMe = () => {
             )}
 
             <p>
-              KRISTIJAN, a 20 year old, overfilled with enthusiasm &
-              craving for success. i accept every challenge as an opportunity
-              for personal, professional growth & development. love taking
-              risks, improving my mind, my body & health, making life purposely
-              uncomfortable to get the best out of it!
+              KRISTIJAN, a 20 year old, overfilled with enthusiasm & craving for
+              success. I&lsquo;ve had a deep attraction towards the world of
+              computers since the age of 7, today it&lsquo;s the only thing
+              I&lsquo;ve devoted 20,000+ hours of my life to, unless sleeping
+              counts.
             </p>
 
             {/* if client width is > 1020, we show the full text uncut */}
@@ -74,7 +75,7 @@ const AboutMe = () => {
             )}
 
             {/* Showing or hiding the full text content with a button */}
-            {moreLessText === 'less' && isFullText == false && (
+            {moreLessText === "less" && isFullText == false && (
               <>
                 <p className={`mt-[10px] lg:block`}>{aboutMoreText}</p>
                 <PortfolioDownloader />
@@ -82,7 +83,7 @@ const AboutMe = () => {
             )}
 
             {/* Changing the button text depending if the full text is shown or not on < 1020 */}
-            {moreLessText === 'more' ? (
+            {moreLessText === "more" ? (
               <span
                 className={`w-fit hidden lg:inline`}
                 onClick={handleMoreLessOption}
@@ -118,7 +119,7 @@ const AboutMe = () => {
                 width={502}
                 height={100}
                 // mt-[27px] to align the picture center, moving the p tag down
-                className="mt-[27px] ml-auto mr-0 w-full object-cover imageBorder"
+                className="ml-auto mr-0 w-full object-cover imageBorder"
               />
               <div className="flex flex-wrap justify-end lg:justify-center">
                 <PortfolioDownloader />

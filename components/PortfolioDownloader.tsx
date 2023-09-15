@@ -1,14 +1,14 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { aboutTextStyles, hoverStyles } from '@/constants'
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { aboutTextStyles, hoverStyles } from "@/constants"
 
 const PortfolioDownloader = () => {
   return (
     // Link that will redirect and directly download the CV
     <Link
       className="flex"
-      href="https://www.dropbox.com/scl/fi/u6sj2xm3evbsiy35er3k6/Kristijan-Lazarev-CV.pdf?rlkey=xpqd68ds6uyje8d65f0nc4sae&dl=0"
+      href="https://www.dropbox.com/scl/fi/3vjnhsdux8ax21ytaa2ox/Kristijan-Lazarev-CV.pdf?rlkey=uk35vu3ft3smlvm36bsk6cig2&dl=0"
       target="_blank"
     >
       <p
