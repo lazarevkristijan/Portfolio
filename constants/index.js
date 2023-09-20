@@ -48,8 +48,16 @@ export const navIcons = [
 
 export const projects = [
   {
+    name: "rituale",
+    description: "habits app",
+    tools: "react / ts / tailwind / mui / sql",
+    imgUrl: "/projectImages/ritualeProjectImage.jpg",
+    liveUrl: "https://www.rituale.digital",
+    githubUrl: "https://github.com/lazarevkristijan/rituale-app",
+  },
+  {
     name: "admin dashboard",
-    description: `sales dash - in progress`,
+    description: "iphone sales dashboard",
     tools: "react / ts / tailwind / figma",
     imgUrl: "/projectImages/dashboardProjectImage.jpg",
     liveUrl: "https://iphone-sales-dashboard.vercel.app/",
@@ -66,7 +74,7 @@ export const projects = [
   {
     name: "portfolio website",
     description: `the one you're looking at now`,
-    tools: "html / tailwind / react / next / ts / figma",
+    tools: " react / ts / next / tailwind / figma",
     imgUrl: "/projectImages/thisProjectImage.png",
     liveUrl: "https://kristijan-lazarev.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/personal-next-js-portfolio",

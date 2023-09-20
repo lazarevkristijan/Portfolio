@@ -1,10 +1,10 @@
 // Project Card is used in the skills section to make consistent looking project cards
 // Includes default styles which can be slightly overriden to fit the specific needs
 
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { hoverStyles } from '@/constants'
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { hoverStyles } from "@/constants"
 
 const ProjectCard = ({
   name,
@@ -21,7 +21,7 @@ const ProjectCard = ({
   liveUrl: string
   githubUrl: string
 }) => (
-  <div className="text-[20px] md:text-[18px] text-left mont smallCaps xl:mb-[20px] w-[301px] relative">
+  <div className="text-[20px] md:text-[18px] text-left mont smallCaps mb-[20px] w-[301px] relative">
     {/* Project image */}
     <Image
       src={imgUrl}
