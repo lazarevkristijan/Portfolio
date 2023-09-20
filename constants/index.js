@@ -50,7 +50,7 @@ export const projects = [
   {
     name: "rituale",
     description: "habits app",
-    tools: "react / ts / tailwind / mui / sql",
+    tools: "react / ts / tailwind / mui / sql / photoshop / illustrator",
     imgUrl: "/projectImages/ritualeProjectImage.jpg",
     liveUrl: "https://www.rituale.digital",
     githubUrl: "https://github.com/lazarevkristijan/rituale-app",
@@ -58,26 +58,26 @@ export const projects = [
   {
     name: "admin dashboard",
     description: "iphone sales dashboard",
-    tools: "react / ts / tailwind / figma",
+    tools: "react / ts / tailwind / figma / photoshop / illustrator",
     imgUrl: "/projectImages/dashboardProjectImage.jpg",
     liveUrl: "https://iphone-sales-dashboard.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/sales-dashboard",
   },
   {
-    name: "exotic exposure",
-    description: "luxury car website ~ pintrest",
-    tools: "html / css / js",
-    imgUrl: "/projectImages/exoticProjectImage.jpg",
-    liveUrl: "https://exotic-exposure.onrender.com/",
-    githubUrl: "https://github.com/lazarevkristijan/Exotic-Exposure",
-  },
-  {
     name: "portfolio website",
     description: `the one you're looking at now`,
-    tools: " react / ts / next / tailwind / figma",
+    tools: " react / ts / next / tailwind / figma / photoshop / illustrator",
     imgUrl: "/projectImages/thisProjectImage.png",
     liveUrl: "https://kristijan-lazarev.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/personal-next-js-portfolio",
+  },
+  {
+    name: "exotic exposure",
+    description: "luxury car website",
+    tools: "html / css / js / photoshop",
+    imgUrl: "/projectImages/exoticProjectImage.jpg",
+    liveUrl: "https://exotic-exposure.onrender.com/",
+    githubUrl: "https://github.com/lazarevkristijan/Exotic-Exposure",
   },
 ]
 
