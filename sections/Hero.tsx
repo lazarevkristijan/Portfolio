@@ -50,12 +50,10 @@ const Hero = () => (
 
         {/* Text */}
         <div>
-          <h1 className="ps2p text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl">
-            KRISTIJAN
-            <br />
-            LAZAREV <br />
+          <h1 className="heroFont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl">
+            KRISTIJAN LAZAREV <br />
             <span className="mont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[25px] sm:text-[15px]">
-              WEB DEVELOPER
+              WEB ENGINEER
             </span>
           </h1>
         </div>

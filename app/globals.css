@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Press+Start+2P&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,14 +16,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* Hero page header text font */
+.heroFont {
+  font-family: "Cinzel Decorative", sans-serif;
+}
+
 /* Small caps text variant */
 .smallCaps {
   font-variant: small-caps;
-}
-
-/* Hero page header text font */
-.ps2p {
-  font-family: "Press Start 2P", "Montserrat", sans-serif;
 }
 
 /* Navbar background color */
