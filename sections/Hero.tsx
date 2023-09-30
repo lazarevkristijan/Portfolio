@@ -52,10 +52,10 @@ const Hero = () => (
         </div>
 
         {/* Image' */}
-        <div className="mont smallCaps flex flex-col text-[25px] md:text-[20px] mt-[30px] lg:mt-[20px] md:mt-[10px] max-h-[150px]">
+        <div className="mont smallCaps flex flex-col text-[25px] md:text-[20px] mt-[30px] lg:mt-[20px] h-fit">
           {heroTags.map((tag) => (
             <div
-              className="flex justify-center"
+              className="flex w-[250px] md:w-[210px] justify-between mx-auto"
               key={tag.name}
             >
               <Image
@@ -63,6 +63,7 @@ const Hero = () => (
                 alt={tag.name}
                 width={35}
                 height={35}
+                className="mr-[10px]"
               />
               <p>{tag.name}</p>
             </div>
