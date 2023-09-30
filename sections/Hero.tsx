@@ -6,7 +6,11 @@ import React from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { slideIn } from "../utils/motion"
-import { sectionMediaQueries, sectionTopDivStyles } from "../constants"
+import {
+  heroTags,
+  sectionMediaQueries,
+  sectionTopDivStyles,
+} from "../constants"
 
 const Hero = () => (
   <div
@@ -19,7 +23,7 @@ const Hero = () => (
         variants={slideIn("left", "spring", 0, 1)}
         initial="hidden"
         whileInView="show"
-        className="w-1/3 sm:w-full"
+        className="w-1/3 sm:w-full my-auto"
       >
         <Image
           src="/otherImages/gradpic.png"
@@ -35,27 +39,34 @@ const Hero = () => (
         variants={slideIn("right", "spring", 0, 1)}
         initial="hidden"
         whileInView="show"
-        className="w-2/3 sm:w-full"
+        className="w-2/3 sm:w-full my-auto"
       >
-        {/* Image' */}
-        <div className="flex justify-center">
-          <Image
-            src="/otherImages/headerCodeImage.png"
-            alt="Header Code Image"
-            width={535}
-            height={158}
-            className="mt-[33px] sm:mt-0 imageBorder drop-shadow-2xl"
-          />
-        </div>
-
         {/* Text */}
         <div>
-          <h1 className="heroFont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none mt-[67px] md:mt-[40px] shadow-2xl">
+          <h1 className="heroFont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none shadow-2xl">
             KRISTIJAN LAZAREV <br />
             <span className="mont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[25px] sm:text-[15px]">
-              WEB ENGINEER
+              IT SPECIALIST
             </span>
           </h1>
+        </div>
+
+        {/* Image' */}
+        <div className="mont smallCaps flex flex-col text-[25px] md:text-[20px] mt-[30px] lg:mt-[20px] md:mt-[10px] max-h-[150px]">
+          {heroTags.map((tag) => (
+            <div
+              className="flex justify-center"
+              key={tag.name}
+            >
+              <Image
+                src={`/HeroIcons/${tag.name.replace(" ", "-")}.svg`}
+                alt={tag.name}
+                width={35}
+                height={35}
+              />
+              <p>{tag.name}</p>
+            </div>
+          ))}
         </div>
       </motion.div>
     </div>

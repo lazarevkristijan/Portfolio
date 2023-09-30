@@ -228,6 +228,19 @@ export const flags = [
     className: "inline ml-1 w-[20px] h-[20px]",
   },
 ]
+
+export const heroTags = [
+  {
+    name: "web engineering",
+  },
+  {
+    name: "graphic design",
+  },
+  {
+    name: "technical support",
+  },
+]
+
 export const sectionMediaQueries =
   "w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] my-0 mx-auto xs:mt-[50px] xs:w-[90%]"
 
