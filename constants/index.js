@@ -260,4 +260,4 @@ export const hoverStyles = "hover:scale-105 transition-all cursor-pointer"
 export const contactLogoStyles = "w-1/3 md:w-fit mx-auto my-auto md:mt-[10px]"
 
 export const aboutMoreText =
-  "My knowledge persists of an advanced understanding of the PC ecosystem, Graphics Design and Web Engineering software, my mother language is JavaScript, but I speak 5 other languages too. My ultimate goal is to create / be a part of an innovation that will change the world for the better."
+  "i am overfilled with enthusiasm plus craving for success and have had a deep attraction towards the world of computers since the age of 7, today it's the only thing i've devoted 20,000+ hours of my life to, unless sleeping counts of course."
