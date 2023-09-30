@@ -28,7 +28,7 @@ const Skills = () => (
       <div className="mt-[50px] flex flex-wrap">
         {/* Div for Front End skills */}
         <div className="w-1/3 h-fit lg:w-1/2 md:w-full">
-          <p className={`${skillsSubHeaderStyles}`}>FRONT END</p>
+          <h3 className={`${skillsSubHeaderStyles}`}>FRONT END</h3>
           <div className="-mt-[20px]">
             {/* Mapping over Front End skills */}
             {frontEndSkills.map((skill, index) => (
@@ -43,7 +43,7 @@ const Skills = () => (
 
         {/* Div for Back End skills */}
         <div className="md:mt-[50px] w-1/3 h-fit lg:w-1/2 md:w-full">
-          <p className={`${skillsSubHeaderStyles}`}>BACK END</p>
+          <h3 className={`${skillsSubHeaderStyles}`}>BACK END</h3>
           <div className="-mt-[20px]">
             {/* Mapping over Back End Skills */}
             {backEndSkills.map((skill, index) => (
@@ -76,7 +76,7 @@ const Skills = () => (
         <div className="lg:mt-[50px] w-1/3 h-fit lg:w-full lg:flex lg:flex-wrap">
           {/* Design */}
           <div className="lg:w-1/2 md:w-full block">
-            <p className={`${skillsSubHeaderStyles}`}>DESIGN</p>
+            <h3 className={`${skillsSubHeaderStyles}`}>DESIGN</h3>
             <div className="-mt-[20px]">
               {/* Mapping over Design skills */}
               {designSkills.map((skill, index) => (
@@ -92,9 +92,9 @@ const Skills = () => (
           {/* Certifications */}
           <div className="text-right mt-[50px] lg:mt-0 lg:w-1/2 md:w-full h-fit flex flex-wrap">
             <div className="text-center md:mt-[50px] w-full">
-              <p className="text-[35px] lg:text-[40px] md:text-[35px] sm:text-[30px]">
+              <h3 className="text-[35px] lg:text-[40px] md:text-[35px] sm:text-[30px]">
                 CERTIFICATES
-              </p>
+              </h3>
             </div>
 
             <div className="lg:mt-[30px] md:w-full">
