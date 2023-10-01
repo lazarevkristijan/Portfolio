@@ -7,7 +7,7 @@ const Heading = ({ title }: { title: string }) => (
     {/* Break line to divide the hr from the empty space - so it is more apparent */}
     <br className="xs:block hidden" />
     <hr className="border-black mont mx-auto w-[1070px] xl:w-[870px] lg:w-[670px] md:w-[470px] sm:w-[270px]" />
-    <h2 className="pt-[50px] text-[70px] xl:text-[60px] lg:text-[50px] md:text-[40px] sm:text-[35px]">
+    <h2 className="pt-[50px] text-[70px] xl:text-[60px] lg:text-[50px] md:text-[40px] sm:text-[35px] xs:text-center">
       {title}
     </h2>
   </>

@@ -4,12 +4,13 @@ import {
   Navbar,
   Hero,
   AboutMe,
+  Experience,
   Projects,
   Skills,
   Contact,
   Footer,
-} from '@/sections/index'
-import { displayMediaQueries } from '@/constants'
+} from "@/sections/index"
+import { displayMediaQueries } from "@/constants"
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         >
           <Hero />
           <AboutMe />
+          <Experience />
           <Projects />
           <Skills />
           <Contact />

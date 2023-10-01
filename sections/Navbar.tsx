@@ -1,43 +1,47 @@
-'use client'
+"use client"
 
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React, { useEffect, useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
 import {
   navIcons,
   navText,
   displayMediaQueries,
   hoverStyles,
-} from '../constants'
+} from "../constants"
 
 const Navbar = () => {
   // State for on/off mobile mode (just icons instead of text on navbar)
-  const [isMobile, setIsMobile] = useState('')
+  // Booleans are with strings so that nothing gets rendered until I get client's width
+  const [isMobile, setIsMobile] = useState("")
+  let mobile = null
 
   // Handle toggling of icons and text
   useEffect(() => {
     function handleWindowSize() {
-      if (window.innerWidth <= 420) {
-        setIsMobile('true')
+      if (window.innerWidth <= 820) {
+        setIsMobile("true")
+        mobile = true
       } else {
-        setIsMobile('false')
+        setIsMobile("false")
+        mobile = false
       }
     }
 
     handleWindowSize()
-    window.addEventListener('resize', handleWindowSize)
+    window.addEventListener("resize", handleWindowSize)
 
     return () => {
-      window.removeEventListener('resize', handleWindowSize)
+      window.removeEventListener("resize", handleWindowSize)
     }
   }, [])
 
   // Smooth scrolling functionality
   useEffect(() => {
-    let url = window.location.href.split('/')
+    let url = window.location.href.split("/")
     let target = url[url.length - 1].toLowerCase()
     let element = document.getElementById(target)
-    element && element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    element && element.scrollIntoView({ behavior: "smooth", block: "start" })
   }, [])
 
   return (
@@ -46,11 +50,11 @@ const Navbar = () => {
       <Link
         href="/"
         onClick={(e) => {
-          let section = document.getElementById('hero')
+          let section = document.getElementById("hero")
           e.preventDefault()
           section &&
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-          window.history.pushState({}, '', `/#hero`)
+            section.scrollIntoView({ behavior: "smooth", block: "start" })
+          window.history.pushState({}, "", `/#hero`)
         }}
       >
         <Image
@@ -63,7 +67,7 @@ const Navbar = () => {
       </Link>
       {/* Mapping over nav icons and showing either icons for xs screens or text for > xs */}
       <ul className="w-full flex justify-evenly">
-        {isMobile === 'true'
+        {isMobile === "true"
           ? navIcons.map((icon, index) => (
               <Link
                 href="/"
@@ -73,15 +77,15 @@ const Navbar = () => {
                   e.preventDefault()
                   section &&
                     section.scrollIntoView({
-                      behavior: 'smooth',
-                      block: 'start',
+                      behavior: "smooth",
+                      block: "start",
                     })
-                  window.history.pushState({}, '', `/${icon.url}`)
+                  window.history.pushState({}, "", `/${icon.url}`)
                 }}
               >
                 <div className="bg-[#1f3a40] active:bg-[#2c5a4c] py-2 px-2 rounded-full">
                   <Image
-                    src={icon.fileUrl}
+                    src={`/navIcons/${icon.url.slice(1)}Icon.svg`}
                     alt={icon.name}
                     width={20}
                     height={20}
@@ -89,20 +93,22 @@ const Navbar = () => {
                 </div>
               </Link>
             ))
-          : isMobile === 'false'
-          ? navText.map((text, index) => (
+          : isMobile === "false"
+          ? navText.map((text) => (
               <Link
                 href="/"
-                key={index}
+                key={text.name}
                 onClick={(e) => {
-                  let section = document.getElementById(text.sectionName)
+                  let section = document.getElementById(
+                    text.sectionName ? text.sectionName : text.name
+                  )
                   e.preventDefault()
                   section &&
                     section.scrollIntoView({
-                      behavior: 'smooth',
-                      block: 'start',
+                      behavior: "smooth",
+                      block: "start",
                     })
-                  window.history.pushState({}, '', `/${text.url}`)
+                  window.history.pushState({}, "", `/#${text.name}`)
                 }}
               >
                 <li
@@ -112,7 +118,7 @@ const Navbar = () => {
                 </li>
               </Link>
             ))
-          : ''}
+          : ""}
       </ul>
     </nav>
   )

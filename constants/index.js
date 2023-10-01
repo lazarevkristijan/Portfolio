@@ -4,22 +4,18 @@ export const navText = [
   {
     name: "about me",
     sectionName: "aboutMe",
-    url: "#aboutMe",
+  },
+  {
+    name: "experience",
   },
   {
     name: "projects",
-    sectionName: "projects",
-    url: "#projects",
   },
   {
     name: "skills",
-    sectionName: "skills",
-    url: "#skills",
   },
   {
     name: "contact",
-    sectionName: "contact",
-    url: "#contact",
   },
 ]
 
@@ -27,22 +23,23 @@ export const navIcons = [
   {
     name: "about_me",
     url: "#aboutMe",
-    fileUrl: "/navIcons/aboutMeIcon.svg",
+  },
+  {
+    name: "experience",
+    url: "#experience",
+    fileUrl: "/",
   },
   {
     name: "projects",
     url: "#projects",
-    fileUrl: "/navIcons/projectsIcon.svg",
   },
   {
     name: "skills",
     url: "#skills",
-    fileUrl: "/navIcons/skillsIcon.svg",
   },
   {
     name: "contact",
     url: "#contact",
-    fileUrl: "/navIcons/contactIcon.svg",
   },
 ]
 
@@ -241,6 +238,50 @@ export const heroTags = [
   },
 ]
 
+export const workExperiences = [
+  {
+    title: "UX/UI ANALYST",
+    imgSrc: "cv-template.jfif",
+    company: "cv-template",
+    periodFrom: "may 2023",
+    periodTo: "aug 2023",
+    employmentType: "internship",
+    location: "",
+    locationType: "remote",
+    description:
+      "reviewed the ux and ui, actively contributed to preparations for upcoming revisions of cv template, ensured its improvement",
+    skills:
+      "user experience (ux), user interface (ui), problem solving, communication",
+  },
+  {
+    title: "SALES AGENT",
+    imgSrc: "acetom.png",
+    company: "acetom",
+    periodFrom: "dec 2022",
+    periodTo: "mar 2023",
+    employmentType: "full time",
+    location: "bulgaria, sofia",
+    locationType: "on site",
+    description:
+      "worked in the sales department in an office environment and managed the workflow using crm software",
+    skills: "crm, communication, business, sales",
+  },
+  {
+    title: "ELECTRICIAN",
+    imgSrc: "electrician.jpg",
+    company: "self employed",
+    periodFrom: "jan 2019",
+    periodTo: "aug 2022",
+    employmentType: "full time",
+    location: "macedonia, radovish",
+    locationType: "on site",
+    description:
+      "worked on electrical installations in residential buildings. thrived in fast-paced environments and was able to handle multiple projects simultaneously",
+    skills:
+      "problem solving, communication, business, sales, electrical engineering",
+  },
+]
+
 export const sectionMediaQueries =
   "w-[1100px] xl:w-[900px] lg:w-[700px] md:w-[500px] sm:w-[300px] my-0 mx-auto xs:mt-[50px] xs:w-[90%]"
 
@@ -253,7 +294,7 @@ export const skillsSubHeaderStyles =
   "smallCaps text-[50px] xl:text-[45px] lg:text-[40px] md:text-[35px] sm:text-[30px] text-center"
 
 export const aboutTextStyles =
-  "smallCaps text-[20px] xl:text-[18px] md:text-[18px] sm:text-[16px]"
+  "smallCaps text-[20px] xl:text-[18px] sm:text-[16px]"
 
 export const hoverStyles = "hover:scale-105 transition-all cursor-pointer"
 

@@ -38,7 +38,7 @@ const AboutMe = () => {
 
   return (
     <div
-      className={`mont xs:text-center ${sectionTopDivStyles}`}
+      className={`text-right mont ${sectionTopDivStyles}`}
       id="aboutMe"
     >
       <div className={`${sectionMediaQueries}`}>
@@ -91,7 +91,7 @@ const AboutMe = () => {
               >
                 <Button
                   title={moreLessText}
-                  overridePadding="px-2 py-1"
+                  overridePadding="px-5 py-1"
                   margin="mt-2"
                   inline
                 />
@@ -103,7 +103,7 @@ const AboutMe = () => {
               >
                 <Button
                   title={moreLessText}
-                  overridePadding="px-2 py-1"
+                  overridePadding="px-5 py-1"
                   margin="mt-2"
                   inline
                 />
