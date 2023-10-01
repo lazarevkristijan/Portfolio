@@ -65,7 +65,7 @@ const Hero = () => (
                 height={35}
                 className="mr-[10px]"
               />
-              <h4>{tag.name}</h4>
+              <h2>{tag.name}</h2>
             </div>
           ))}
         </div>

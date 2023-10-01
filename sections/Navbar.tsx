@@ -65,54 +65,58 @@ const Navbar = () => {
       <ul className="w-full flex justify-evenly">
         {isMobile === "true"
           ? navIcons.map((icon, index) => (
-              <Link
-                href="/"
-                key={index}
-                onClick={(e) => {
-                  let section = document.getElementById(
-                    icon.url ? icon.url : icon.name
-                  )
-                  e.preventDefault()
-                  section &&
-                    section.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    })
-                }}
-              >
-                <div className="bg-[#1f3a40] active:bg-[#2c5a4c] py-2 px-2 rounded-full">
-                  <Image
-                    src={`/navIcons/${icon.name}Icon.svg`}
-                    alt={icon.name}
-                    width={20}
-                    height={20}
-                  />
-                </div>
-              </Link>
+              <li>
+                <Link
+                  href="/"
+                  key={index}
+                  onClick={(e) => {
+                    let section = document.getElementById(
+                      icon.url ? icon.url : icon.name
+                    )
+                    e.preventDefault()
+                    section &&
+                      section.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      })
+                  }}
+                >
+                  <div className="bg-[#1f3a40] active:bg-[#2c5a4c] py-2 px-2 rounded-full">
+                    <Image
+                      src={`/navIcons/${icon.name}Icon.svg`}
+                      alt={icon.name}
+                      width={20}
+                      height={20}
+                    />
+                  </div>
+                </Link>
+              </li>
             ))
           : isMobile === "false"
           ? navText.map((text, index) => (
-              <Link
-                href="/"
-                key={index}
-                onClick={(e) => {
-                  let section = document.getElementById(
-                    text.sectionName ? text.sectionName : text.name
-                  )
-                  e.preventDefault()
-                  section &&
-                    section.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    })
-                }}
-              >
-                <li
-                  className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
+              <li>
+                <Link
+                  href="/"
+                  key={index}
+                  onClick={(e) => {
+                    let section = document.getElementById(
+                      text.sectionName ? text.sectionName : text.name
+                    )
+                    e.preventDefault()
+                    section &&
+                      section.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      })
+                  }}
                 >
-                  {text.name}
-                </li>
-              </Link>
+                  <li
+                    className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
+                  >
+                    {text.name}
+                  </li>
+                </Link>
+              </li>
             ))
           : ""}
       </ul>

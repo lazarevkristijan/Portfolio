@@ -96,7 +96,7 @@ export const frontEndSkills = [
   },
   {
     name: "next.js",
-    level: "w-3/5",
+    level: "w-4/5",
   },
   {
     name: "tailwind",
