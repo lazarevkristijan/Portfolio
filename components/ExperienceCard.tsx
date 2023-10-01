@@ -23,7 +23,7 @@ const ExperienceCard = ({
   skills: string
 }) => {
   return (
-    <div className="mb-[30px] mx-auto w-[320px] xl:w-[301px] md:w-[240px] sm:w-[260px] xs:w-[90%]">
+    <div className="xl:mb-[30px] mx-auto w-[320px] xl:w-[301px] md:w-[240px] sm:w-[260px] xs:w-[90%]">
       <div className="flex items-center mb-[5px]">
         <Image
           src={`/experienceIcons/${imgSrc}`}
@@ -91,9 +91,18 @@ const ExperienceCard = ({
           height={15}
           className="mr-[5px]"
         />
-        <h4 className="mb-[5px]">{location}</h4>
+        <h4>{location}</h4>
       </div>
-      <p>{skills}</p>
+      <div>
+        <Image
+          src="/experienceIcons/skillsUsed.svg"
+          alt="skills icon"
+          width={15}
+          height={15}
+          className="float-left mt-[10px] xl:mt-[8px] sm:mt-[6px] mr-[5px]"
+        />
+        <p>{skills}</p>
+      </div>
     </div>
   )
 }
