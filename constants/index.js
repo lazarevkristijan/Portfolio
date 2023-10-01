@@ -248,8 +248,6 @@ export const workExperiences = [
     employmentType: "internship",
     location: "google meet",
     locationType: "remote",
-    description:
-      "reviewed the ux and ui, actively contributed to preparations for upcoming revisions of cv template, ensured it's improvement",
     skills:
       "user experience (ux), user interface (ui), problem solving, communication",
   },
@@ -262,8 +260,6 @@ export const workExperiences = [
     employmentType: "full time",
     location: "bulgaria, sofia",
     locationType: "on site",
-    description:
-      "worked in the sales department in an office environment and managed the workflow using crm software",
     skills: "crm, communication, business, sales",
   },
   {
@@ -275,8 +271,6 @@ export const workExperiences = [
     employmentType: "full time",
     location: "macedonia, radovish",
     locationType: "on site",
-    description:
-      "worked on electrical installations in residential buildings. thrived in fast-paced environments and was able to handle multiple projects simultaneously",
     skills:
       "problem solving, communication, business, sales, electrical engineering",
   },
