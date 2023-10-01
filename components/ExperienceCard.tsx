@@ -59,7 +59,7 @@ const ExperienceCard = ({
         </div>
         <div className="flex">
           <Image
-            src="/experienceicons/workType.svg"
+            src="/experienceIcons/workType.svg"
             alt="work type icon"
             width={15}
             height={15}
