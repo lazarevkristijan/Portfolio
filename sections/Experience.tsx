@@ -14,7 +14,7 @@ const Experience = () => {
     >
       <div className={` ${sectionMediaQueries}`}>
         <Heading title="EXPERIENCE" />
-        <div className="mt-[50px] text-[20px] xl:text-[18px] sm:text-[16px] xs:text-justify">
+        <div className="mt-[50px] text-[20px] xl:text-[18px] sm:text-[16px] flex flex-wrap xs:text-justify">
           {workExperiences.map((exp) => (
             <ExperienceCard
               key={exp.title}

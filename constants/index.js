@@ -246,10 +246,10 @@ export const workExperiences = [
     periodFrom: "may 2023",
     periodTo: "aug 2023",
     employmentType: "internship",
-    location: "",
+    location: "google meet",
     locationType: "remote",
     description:
-      "reviewed the ux and ui, actively contributed to preparations for upcoming revisions of cv template, ensured its improvement",
+      "reviewed the ux and ui, actively contributed to preparations for upcoming revisions of cv template, ensured it's improvement",
     skills:
       "user experience (ux), user interface (ui), problem solving, communication",
   },
