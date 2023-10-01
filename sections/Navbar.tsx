@@ -14,17 +14,14 @@ const Navbar = () => {
   // State for on/off mobile mode (just icons instead of text on navbar)
   // Booleans are with strings so that nothing gets rendered until I get client's width
   const [isMobile, setIsMobile] = useState("")
-  let mobile = null
 
   // Handle toggling of icons and text
   useEffect(() => {
     function handleWindowSize() {
       if (window.innerWidth <= 820) {
         setIsMobile("true")
-        mobile = true
       } else {
         setIsMobile("false")
-        mobile = false
       }
     }
 
@@ -54,7 +51,6 @@ const Navbar = () => {
           e.preventDefault()
           section &&
             section.scrollIntoView({ behavior: "smooth", block: "start" })
-          window.history.pushState({}, "", `/#hero`)
         }}
       >
         <Image
@@ -73,19 +69,20 @@ const Navbar = () => {
                 href="/"
                 key={index}
                 onClick={(e) => {
-                  let section = document.getElementById(icon.name)
+                  let section = document.getElementById(
+                    icon.url ? icon.url : icon.name
+                  )
                   e.preventDefault()
                   section &&
                     section.scrollIntoView({
                       behavior: "smooth",
                       block: "start",
                     })
-                  window.history.pushState({}, "", `/${icon.url}`)
                 }}
               >
                 <div className="bg-[#1f3a40] active:bg-[#2c5a4c] py-2 px-2 rounded-full">
                   <Image
-                    src={`/navIcons/${icon.url.slice(1)}Icon.svg`}
+                    src={`/navIcons/${icon.name}Icon.svg`}
                     alt={icon.name}
                     width={20}
                     height={20}
@@ -94,10 +91,10 @@ const Navbar = () => {
               </Link>
             ))
           : isMobile === "false"
-          ? navText.map((text) => (
+          ? navText.map((text, index) => (
               <Link
                 href="/"
-                key={text.name}
+                key={index}
                 onClick={(e) => {
                   let section = document.getElementById(
                     text.sectionName ? text.sectionName : text.name
@@ -108,7 +105,6 @@ const Navbar = () => {
                       behavior: "smooth",
                       block: "start",
                     })
-                  window.history.pushState({}, "", `/#${text.name}`)
                 }}
               >
                 <li

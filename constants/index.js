@@ -22,24 +22,19 @@ export const navText = [
 export const navIcons = [
   {
     name: "about_me",
-    url: "#aboutMe",
+    url: "aboutMe",
   },
   {
     name: "experience",
-    url: "#experience",
-    fileUrl: "/",
   },
   {
     name: "projects",
-    url: "#projects",
   },
   {
     name: "skills",
-    url: "#skills",
   },
   {
     name: "contact",
-    url: "#contact",
   },
 ]
 
