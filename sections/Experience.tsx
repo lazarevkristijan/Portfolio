@@ -8,8 +8,9 @@ import React from "react"
 
 const Experience = () => {
   return (
+    // pb-[20px], default is 50px, but we have 30px margin from the experiences
     <div
-      className={`mont smallCaps ${sectionTopDivStyles}`}
+      className={`mont smallCaps ${sectionTopDivStyles} pb-[20px]`}
       id="experience"
     >
       <div className={` ${sectionMediaQueries}`}>
