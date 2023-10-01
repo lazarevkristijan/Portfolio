@@ -83,6 +83,10 @@ export const frontEndSkills = [
     level: "w-full",
   },
   {
+    name: "tailwind",
+    level: "w-full",
+  },
+  {
     name: "javascript",
     level: "w-4/5",
   },
@@ -97,10 +101,6 @@ export const frontEndSkills = [
   {
     name: "next.js",
     level: "w-4/5",
-  },
-  {
-    name: "tailwind",
-    level: "w-full",
   },
 ]
 
