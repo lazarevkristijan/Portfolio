@@ -67,7 +67,7 @@ const Skills = () => (
               width={300}
               height={250}
               alt="businessman image"
-              className="mx-auto w-[300px] h-[250px]"
+              className="mx-auto w-[300px] h-[253px]"
             />
           </motion.div>
         </div>
