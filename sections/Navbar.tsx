@@ -109,12 +109,9 @@ const Navbar = () => {
                         block: "start",
                       })
                   }}
+                  className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
                 >
-                  <li
-                    className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
-                  >
-                    {text.name}
-                  </li>
+                  {text.name}
                 </Link>
               </li>
             ))
