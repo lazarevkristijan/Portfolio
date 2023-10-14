@@ -1,8 +1,8 @@
 // Reusable button component used throughout the project. It has a default styling
 // so that there is consistency with the colors, and easier changes if needed
 
-import React from 'react'
-import { hoverStyles } from '@/constants'
+import React from "react"
+import { hoverStyles } from "@/constants"
 
 const Button = ({
   title,
@@ -16,17 +16,16 @@ const Button = ({
   overridePadding?: string
 }) => (
   // Optional editing capabilities of the button
-  <div
-    className={` bg-[#1F1F2D] 
-      max-w-fit rounded-full
+  <button
+    className={`bg-[#1F1F2D] 
+      max-w-fit rounded-full smallCaps
       ${hoverStyles} selection:bg-transparent
-      ${margin || ''} 
-      ${overridePadding || 'px-5 py-3'}
-        ${inline ? 'inline-block' : ''}
-         `}
+      ${margin || ""} 
+      ${overridePadding || "px-5 py-3"}
+        ${inline ? "inline-block" : ""}`}
   >
     {title}
-  </div>
+  </button>
 )
 
 export default Button

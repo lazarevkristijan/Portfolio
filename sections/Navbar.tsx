@@ -94,7 +94,9 @@ const Navbar = () => {
             ))
           : isMobile === "false"
           ? navText.map((text, index) => (
-              <li>
+              <li
+                className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
+              >
                 <Link
                   href="/"
                   key={index}
@@ -109,7 +111,6 @@ const Navbar = () => {
                         block: "start",
                       })
                   }}
-                  className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
                 >
                   {text.name}
                 </Link>
