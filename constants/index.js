@@ -235,6 +235,17 @@ export const heroTags = [
 
 export const workExperiences = [
   {
+    title: "IT ENGINEER",
+    imgSrc: "govablaze.jpg",
+    company: "govablaze",
+    periodFrom: "oct 2023",
+    periodTo: "present",
+    employmentType: "full time",
+    location: "bulgaria, sofia",
+    locationType: "on site",
+    skills: "web hosting, qa testing, infrastructure management",
+  },
+  {
     title: "UX/UI ANALYST",
     imgSrc: "cv-template.jfif",
     company: "cv-template",
