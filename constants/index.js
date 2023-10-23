@@ -2,6 +2,9 @@
 
 export const navText = [
   {
+    name: 'home',
+  },
+  {
     name: "about me",
     sectionName: "aboutMe",
   },
@@ -21,6 +24,9 @@ export const navText = [
 
 export const navIcons = [
   {
+name: 'home',
+},  
+{
     name: "about_me",
     url: "aboutMe",
   },

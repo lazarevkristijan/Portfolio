@@ -15,7 +15,7 @@ import {
 const Hero = () => (
   <div
     className={`${sectionTopDivStyles} pt-[100px] xs:pt-[50px]  overflow-x-hidden`}
-    id="hero"
+    id="home"
   >
     <div className={`${sectionMediaQueries} flex sm:flex-col`}>
       {/* Graduation Pic */}
