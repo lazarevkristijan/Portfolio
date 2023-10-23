@@ -43,24 +43,6 @@ const Navbar = () => {
 
   return (
     <nav className={`${displayMediaQueries} h-[50px] flex items-center`}>
-      {/* Logo button  */}
-      <Link
-        href="/"
-        onClick={(e) => {
-          let section = document.getElementById("hero")
-          e.preventDefault()
-          section &&
-            section.scrollIntoView({ behavior: "smooth", block: "start" })
-        }}
-      >
-        <Image
-          src="/Klogo.svg"
-          width={45}
-          height={45}
-          alt="logo"
-          className={`ml-[50px] xl:ml-[40px] lg:ml-[30px] md:ml-[20px] sm:ml-[10px] xs:ml-[20px] md:w-[40px] ${hoverStyles}`}
-        />
-      </Link>
       {/* Mapping over nav icons and showing either icons for xs screens or text for > xs */}
       <ul className="w-full flex justify-evenly">
         {isMobile === "true"
