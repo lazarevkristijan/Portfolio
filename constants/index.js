@@ -24,7 +24,7 @@ export const navText = [
 
 export const navIcons = [
   {
-name: 'hero',
+name: 'home',
 },  
 {
     name: "about_me",
