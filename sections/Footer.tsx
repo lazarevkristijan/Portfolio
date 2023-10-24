@@ -22,7 +22,7 @@ const Footer = () => {
         <Link
           href="/"
           onClick={(e) => {
-            let section = document.getElementById("hero")
+            let section = document.getElementById("home")
             e.preventDefault()
             section &&
               section.scrollIntoView({ behavior: "smooth", block: "start" })
