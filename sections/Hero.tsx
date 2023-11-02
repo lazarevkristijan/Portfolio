@@ -45,8 +45,8 @@ const Hero = () => (
         <div>
           <h1 className="heroFont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none shadow-2xl">
             KRISTIJAN LAZAREV <br />
-            <span className="mont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[25px] sm:text-[15px]">
-              IT SPECIALIST
+            <span className="mont text-[45px] xl:text-[35px] lg:text-[30px] md:text-[20px] sm:text-[15px]">
+              SOFTWARE ENGINEER
             </span>
           </h1>
         </div>
