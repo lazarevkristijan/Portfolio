@@ -2,7 +2,7 @@
 
 export const navText = [
   {
-    name: 'home',
+    name: "home",
   },
   {
     name: "about me",
@@ -24,9 +24,9 @@ export const navText = [
 
 export const navIcons = [
   {
-name: 'home',
-},  
-{
+    name: "home",
+  },
+  {
     name: "about_me",
     url: "aboutMe",
   },
@@ -240,6 +240,28 @@ export const heroTags = [
 ]
 
 export const workExperiences = [
+  {
+    title: "MENTEE",
+    imgSrc: "ibm.jfif",
+    company: "ibm",
+    periodFrom: "nov 2023",
+    periodTo: "present",
+    employmentType: "part time",
+    location: "bulgaria, sofia",
+    locationType: "on site",
+    skills: "business, communication, software, hardware",
+  },
+  {
+    title: "DEVELOPER",
+    imgSrc: "alias.png",
+    company: "alias",
+    periodFrom: "oct 2023",
+    periodTo: "present",
+    employmentType: "part time",
+    location: "bulgaria, sofia",
+    locationType: "hybrid",
+    skills: "software engineering, project management, business",
+  },
   {
     title: "IT ENGINEER",
     imgSrc: "govablaze.jpg",
