@@ -10,18 +10,23 @@ import {
   hoverStyles,
 } from "../constants"
 
+type NavbarState = {
+  isMobile: boolean | null
+}
+
 const Navbar = () => {
   // State for on/off mobile mode (just icons instead of text on navbar)
-  // Booleans are with strings so that nothing gets rendered until I get client's width
-  const [isMobile, setIsMobile] = useState("")
+  const [mobileState, setMobileState] = useState<NavbarState>({
+    isMobile: null,
+  })
 
   // Handle toggling of icons and text
   useEffect(() => {
     function handleWindowSize() {
       if (window.innerWidth <= 820) {
-        setIsMobile("true")
+        setMobileState({ isMobile: true })
       } else {
-        setIsMobile("false")
+        setMobileState({ isMobile: false })
       }
     }
 
@@ -45,7 +50,7 @@ const Navbar = () => {
     <nav className={`${displayMediaQueries} h-[50px] flex items-center`}>
       {/* Mapping over nav icons and showing either icons for xs screens or text for > xs */}
       <ul className="w-full flex justify-evenly">
-        {isMobile === "true"
+        {mobileState.isMobile
           ? navIcons.map((icon, index) => (
               <li>
                 <Link
@@ -74,8 +79,8 @@ const Navbar = () => {
                 </Link>
               </li>
             ))
-          : isMobile === "false"
-          ? navText.map((text, index) => (
+          : mobileState.isMobile === false &&
+            navText.map((text, index) => (
               <li
                 className={`text-[#c1ffbf] smallCaps text-[30px] md:text-[27.5px] sm:text-[20px] mont ${hoverStyles}`}
               >
@@ -97,8 +102,7 @@ const Navbar = () => {
                   {text.name}
                 </Link>
               </li>
-            ))
-          : ""}
+            ))}
       </ul>
     </nav>
   )
