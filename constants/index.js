@@ -264,8 +264,8 @@ export const workExperiences = [
   },
   {
     title: "IT ENGINEER",
-    imgSrc: "govablaze.jpg",
-    company: "govablaze",
+    imgSrc: "kariox.png",
+    company: "kariox group",
     periodFrom: "oct 2023",
     periodTo: "present",
     employmentType: "full time",
