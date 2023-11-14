@@ -61,9 +61,9 @@ const AboutMe = () => {
             )}
 
             <p>
-              Kristijan, a 20 year old it specialist. my knowledge persists of
-              an advanced understanding of the pc ecosystem along with graphic
-              design and web engineering software. my mother language is
+              Kristijan, a 20 year old software engineer. my knowledge persists
+              of an advanced understanding of the pc ecosystem along with
+              graphic design and web engineering software. my mother language is
               javascript, but i also speak 5 actual languages too. my ultimate
               goal is to create / be a part of an innovation that will change
               the world for the better.
