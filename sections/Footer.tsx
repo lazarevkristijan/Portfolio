@@ -35,9 +35,8 @@ const Footer = () => {
         </Link>
         {/* Quote */}
         <p className="leading-5 xs:mx-auto mt-[50px] w-[320px] sm:text-center">
-          your only limitation is the one <br />
-          which you set up in your own mind. <br />
-          Napoleon Hill
+          it's not about who's the most talented<br />
+         it's about who's the hungriest<br />
         </p>
       </div>
     </div>
