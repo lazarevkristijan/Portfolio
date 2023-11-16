@@ -35,7 +35,10 @@ const Footer = () => {
         </Link>
         {/* Quote */}
         <p className="leading-5 xs:mx-auto mt-[50px] w-[320px] sm:text-center">
-          it's not about who's the most talented, it's about who's the hungriest<br />
+          it's not about who's the most talented, it's about who's the{" "}
+          <span className="text-red-500 font-bold underline selection:bg-black">
+            hungriest
+          </span>
         </p>
       </div>
     </div>

@@ -89,43 +89,39 @@ export const frontEndSkills = [
     level: "w-full",
   },
   {
-    name: "tailwind",
+    name: "javascript",
     level: "w-full",
   },
   {
-    name: "javascript",
-    level: "w-4/5",
+    name: "react",
+    level: "w-full",
   },
   {
     name: "typescript",
     level: "w-4/5",
   },
   {
-    name: "react",
-    level: "w-4/5",
-  },
-  {
-    name: "next.js",
-    level: "w-4/5",
+    name: "react native",
+    level: "w-3/5",
   },
 ]
 
 export const backEndSkills = [
   {
-    name: "linux",
-    level: "w-4/5",
-  },
-  {
     name: "node.js",
-    level: "w-1/2",
-  },
-  {
-    name: "mongodb",
-    level: "w-1/2",
+    level: "w-full",
   },
   {
     name: "express.js",
-    level: "w-1/2",
+    level: "w-full",
+  },
+  {
+    name: "postgresql",
+    level: "w-4/5",
+  },
+  {
+    name: "linux",
+    level: "w-4/5",
   },
 ]
 
