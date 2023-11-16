@@ -104,6 +104,10 @@ export const frontEndSkills = [
     name: "react native",
     level: "w-3/5",
   },
+  {
+    name: "jest",
+    level: "w-3/5",
+  },
 ]
 
 export const backEndSkills = [
