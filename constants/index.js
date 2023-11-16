@@ -193,36 +193,26 @@ export const flags = [
   {
     source: "/flags/us.svg",
     alt: "usa flag",
-    width: 20,
-    height: 20,
     className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/de.svg",
     alt: "germany flag",
-    width: 20,
-    height: 20,
     className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/mk.svg",
     alt: "macedonia flag",
-    width: 20,
-    height: 20,
     className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/bg.svg",
     alt: "bulgaria flag",
-    width: 20,
-    height: 20,
     className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/rs.svg",
     alt: "serbia flag",
-    width: 20,
-    height: 20,
     className: "inline ml-1 w-[20px] h-[20px]",
   },
 ]

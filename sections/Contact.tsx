@@ -42,8 +42,8 @@ const Contact = () => (
                 key={index}
                 source={flag.source}
                 alt={flag.alt}
-                width={flag.width}
-                height={flag.height}
+                width={20}
+                height={20}
                 classname={flag.className}
               />
             ))}
