@@ -48,7 +48,7 @@ export const projects = [
   {
     name: "rituale",
     description: "habits app",
-    tools: "react / ts / tailwind / mui / sql / photoshop / illustrator",
+    tools: "react / ts / sql / photoshop / illustrator",
     imgUrl: "/projectImages/ritualeProjectImage.jpg",
     liveUrl: "https://www.rituale.digital",
     githubUrl: "https://github.com/lazarevkristijan/rituale-app",
@@ -56,7 +56,7 @@ export const projects = [
   {
     name: "admin dashboard",
     description: "iphone sales dashboard",
-    tools: "react / ts / tailwind / figma / photoshop / illustrator",
+    tools: "react / ts / figma / photoshop / illustrator",
     imgUrl: "/projectImages/dashboardProjectImage.jpg",
     liveUrl: "https://iphone-sales-dashboard.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/sales-dashboard",
@@ -64,7 +64,7 @@ export const projects = [
   {
     name: "portfolio website",
     description: `the one you're looking at now`,
-    tools: " react / ts / next / tailwind / figma / photoshop / illustrator",
+    tools: "react / ts / next / figma / photoshop / illustrator",
     imgUrl: "/projectImages/thisProjectImage.png",
     liveUrl: "https://kristijan-lazarev.vercel.app/",
     githubUrl: "https://github.com/lazarevkristijan/personal-next-js-portfolio",
@@ -98,6 +98,10 @@ export const frontEndSkills = [
   },
   {
     name: "typescript",
+    level: "w-4/5",
+  },
+  {
+    name: "wordpress",
     level: "w-4/5",
   },
   {
@@ -146,10 +150,19 @@ export const designSkills = [
 
 export const certifications = [
   {
+    name: "web development",
+    issuer: "ibm",
+    issueDate: "11/2023",
+    skillsLearnt: "js / react / sql / testing",
+    issuerLogo: "/experienceIcons/ibm.png",
+    linkToCertification:
+      "https://www.credly.com/badges/cf037a67-4565-4ecb-a0d3-7addf95875b0/public_url",
+  },
+  {
     name: "the web developer bootcamp",
     issuer: "udemy",
     issueDate: "06/2023",
-    skillsLearnt: "html/css/js/react/mongo/express",
+    skillsLearnt: "html / css / js / react / mongo / node",
     issuerLogo: "/otherImages/udemy.png",
     linkToCertification:
       "https://www.udemy.com/certificate/UC-3dfb06f6-a5e1-475a-9589-3c1864d72bab/",
@@ -239,28 +252,28 @@ export const workExperiences = [
     employmentType: "part time",
     location: "bulgaria, sofia",
     locationType: "on site",
-    skills: "business, communication, software, hardware",
+    skills: "business, communication, software, hardware, software development",
   },
   {
-    title: "DEVELOPER",
+    title: "WORDPRESS DEVELOPER",
     imgSrc: "alias.png",
     company: "alias",
     periodFrom: "oct 2023",
     periodTo: "present",
     employmentType: "part time",
     location: "bulgaria, sofia",
-    locationType: "hybrid",
-    skills: "software engineering, project management, business",
+    locationType: "remote",
+    skills: "wordpress, project management, business",
   },
   {
-    title: "IT ENGINEER",
+    title: "INFRASTRUCTURE ENGINEER",
     imgSrc: "kariox.png",
-    company: "kariox group",
+    company: "kariox",
     periodFrom: "oct 2023",
     periodTo: "present",
-    employmentType: "full time",
+    employmentType: "part time",
     location: "bulgaria, sofia",
-    locationType: "on site",
+    locationType: "remote",
     skills: "web hosting, qa testing, infrastructure management",
   },
   {

@@ -8,7 +8,7 @@ const PortfolioDownloader = () => {
     // Link that will redirect and directly download the CV
     <Link
       className="flex"
-      href="https://www.dropbox.com/scl/fi/3vjnhsdux8ax21ytaa2ox/Kristijan-Lazarev-CV.pdf?rlkey=uk35vu3ft3smlvm36bsk6cig2&dl=0"
+      href="https://www.dropbox.com/scl/fi/nqdrq0z3oqp5zxl6u69jq/Kristijan-Lazarev-CV-ENG.pdf?rlkey=zgy4fqck7cd36t7f8wd6l73q4&dl=0"
       target="_blank"
     >
       <p

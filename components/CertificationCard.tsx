@@ -1,9 +1,9 @@
 // Reusable card component for for the certifications part of the project
 
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import { hoverStyles } from '@/constants'
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import { hoverStyles } from "@/constants"
 
 const CertificationCard = ({
   name,
@@ -21,7 +21,10 @@ const CertificationCard = ({
   linkToCertification: string
 }) => (
   // Link to certification
-  <Link href={linkToCertification} target="_blank">
+  <Link
+    href={linkToCertification}
+    target="_blank"
+  >
     <div
       className={`text-[18px] mont smallCaps flex justify-end md:justify-center items-center ${hoverStyles}`}
     >
@@ -32,9 +35,8 @@ const CertificationCard = ({
             <Image
               src={issuerLogo}
               alt={`${issuer} logo`}
-              width={100}
-              height={100}
-              className="scale-150"
+              width={50}
+              height={50}
             />
           </div>
         </div>
@@ -53,9 +55,8 @@ const CertificationCard = ({
           <Image
             src={issuerLogo}
             alt={`${issuer} logo`}
-            width={60}
-            height={60}
-            className="scale-150"
+            width={50}
+            height={50}
           />
         </div>
       </div>
