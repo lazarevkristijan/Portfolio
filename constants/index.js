@@ -154,7 +154,7 @@ export const certifications = [
     issuer: "ibm",
     issueDate: "11/2023",
     skillsLearnt: "js / react / sql / testing",
-    issuerLogo: "/experienceIcons/ibm.png",
+    issuerLogo: "/otherImages/ibm.png",
     linkToCertification:
       "https://www.credly.com/badges/cf037a67-4565-4ecb-a0d3-7addf95875b0/public_url",
   },
@@ -245,7 +245,7 @@ export const heroTags = [
 export const workExperiences = [
   {
     title: "MENTEE",
-    imgSrc: "ibm.jfif",
+    imgSrc: "ibmC.png",
     company: "ibm",
     periodFrom: "nov 2023",
     periodTo: "present",
