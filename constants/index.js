@@ -255,7 +255,7 @@ export const workExperiences = [
     skills: "business, communication, software, hardware, software development",
   },
   {
-    title: "WORDPRESS DEVELOPER",
+    title: "LEAD DEVELOPER",
     imgSrc: "alias.png",
     company: "alias",
     periodFrom: "oct 2023",
