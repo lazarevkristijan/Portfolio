@@ -66,7 +66,7 @@ export const projects = [
     description: `the one you're looking at now`,
     tools: "react / ts / next / figma / photoshop / illustrator",
     imgUrl: "/projectImages/thisProjectImage.png",
-    liveUrl: "https://kristijan-lazarev.vercel.app/",
+    liveUrl: "https://www.kristijanlazarev.com/",
     githubUrl: "https://github.com/lazarevkristijan/personal-next-js-portfolio",
   },
   {
