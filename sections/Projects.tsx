@@ -22,7 +22,7 @@ const Projects = () => (
       <div className="flex flex-wrap justify-evenly mt-[50px]">
         {/* Mapping over all projects */}
         {projects.map((project, index) => (
-          <motion.div
+          <div
             key={index}
             className={`${hoverStyles} cursor-default`}
           >
@@ -34,7 +34,7 @@ const Projects = () => (
               liveUrl={project.liveUrl}
               githubUrl={project.githubUrl}
             />
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

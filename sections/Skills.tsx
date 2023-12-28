@@ -54,13 +54,7 @@ const Skills = () => (
               />
             ))}
           </div>
-          <motion.div
-            variants={slideIn("up", "spring", 0, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="mt-[50px]"
-          >
+          <div className="mt-[50px]">
             {/* Business image / skilled person illustration */}
             <Image
               src="/otherImages/businessImage.png"
@@ -69,7 +63,7 @@ const Skills = () => (
               alt="businessman image"
               className="mx-auto w-[300px] h-[253px]"
             />
-          </motion.div>
+          </div>
         </div>
 
         {/* Div for Design skills & certifications*/}

@@ -19,12 +19,7 @@ const Hero = () => (
   >
     <div className={`${sectionMediaQueries} flex sm:flex-col`}>
       {/* Graduation Pic */}
-      <motion.div
-        variants={slideIn("left", "spring", 0, 1)}
-        initial="hidden"
-        whileInView="show"
-        className="w-1/3 sm:w-full my-auto"
-      >
+      <div className="w-1/3 sm:w-full my-auto">
         <Image
           src="/otherImages/gradpic.png"
           alt="Graduation Pic"
@@ -32,15 +27,10 @@ const Hero = () => (
           height={614}
           className="drop-shadow-2xl"
         />
-      </motion.div>
+      </div>
 
       {/* Decorative pictures */}
-      <motion.div
-        variants={slideIn("right", "spring", 0, 1)}
-        initial="hidden"
-        whileInView="show"
-        className="w-2/3 sm:w-full my-auto"
-      >
+      <div className="w-2/3 sm:w-full my-auto">
         {/* Text */}
         <div>
           <h1 className="heroFont text-[60px] xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[25px] text-center leading-none shadow-2xl">
@@ -69,7 +59,7 @@ const Hero = () => (
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   </div>
 )

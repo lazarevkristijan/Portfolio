@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { slideIn } from '@/utils/motion'
+import React from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { slideIn } from "@/utils/motion"
 import {
   sectionMediaQueries,
   sectionTopDivStyles,
@@ -12,8 +12,8 @@ import {
   contactDetails,
   hoverStyles,
   contactLogoStyles,
-} from '@/constants'
-import { Flag, ContactDetail, Heading } from '../components/index'
+} from "@/constants"
+import { Flag, ContactDetail, Heading } from "../components/index"
 
 const Contact = () => (
   <div
@@ -50,18 +50,13 @@ const Contact = () => (
           </p>
           {/* What topics I'm into */}
           <p>
-            i love topics such as: <br /> books, fitness & health,{' '}
+            i love topics such as: <br /> books, fitness & health,{" "}
             <br className="hidden lg:inline" /> coding, personal growth
           </p>
         </div>
       </div>
       {/* Logos with animations */}
-      <motion.div
-        variants={slideIn('right', 'spring', 0, 1)}
-        initial="hidden"
-        whileInView="show"
-        className="w-1/2 sm:w-full flex md:block my-auto"
-      >
+      <div className="w-1/2 sm:w-full flex md:block my-auto">
         {/* GMAIL */}
         <div className={`${contactLogoStyles} ml-0 mr-auto`}>
           <Link href="mailto:lazarevkristijan@gmail.com">
@@ -78,7 +73,10 @@ const Contact = () => (
         </div>
         {/* GITHUB */}
         <div className={`${contactLogoStyles}`}>
-          <Link href="https://github.com/lazarevkristijan" target="_blank">
+          <Link
+            href="https://github.com/lazarevkristijan"
+            target="_blank"
+          >
             {/* GITHUB IMAGE */}
             <Image
               src="/mediaIcons/githubLogo.svg"
@@ -105,7 +103,7 @@ const Contact = () => (
             />
           </Link>
         </div>
-      </motion.div>
+      </div>
     </div>
   </div>
 )
