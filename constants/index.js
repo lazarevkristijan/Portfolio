@@ -48,7 +48,7 @@ export const projects = [
   {
     name: "rituale",
     description: "habits app",
-    tools: "react / ts / sql / photoshop / illustrator",
+    tools: "react / ts / nodde.js / postgresql / jest / photoshop / illustrator",
     imgUrl: "/projectImages/ritualeProjectImage.jpg",
     liveUrl: "https://www.rituale.digital",
     githubUrl: "https://github.com/lazarevkristijan/rituale-app",
@@ -260,10 +260,10 @@ export const workExperiences = [
     company: "alias",
     periodFrom: "oct 2023",
     periodTo: "present",
-    employmentType: "part time",
+    employmentType: "full time",
     location: "bulgaria, sofia",
     locationType: "remote",
-    skills: "wordpress, project management, business",
+    skills: "react, typescript, node.js, postgresql, photoshop, illustrator, jest",
   },
   {
     title: "INFRASTRUCTURE ENGINEER",
