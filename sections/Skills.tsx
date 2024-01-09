@@ -2,7 +2,6 @@
 
 import React from "react"
 import Image from "next/image"
-import { motion } from "framer-motion"
 import { Heading, SkillCard, CertificationCard } from "../components/index"
 import {
   frontEndSkills,
@@ -13,7 +12,6 @@ import {
   sectionMediaQueries,
   sectionTopDivStyles,
 } from "@/constants"
-import { slideIn } from "@/utils/motion"
 
 const Skills = () => (
   // pb usually 50px, now 30 because ceritifcation cards have 20px margin bottom

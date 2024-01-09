@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react"
-import { motion } from "framer-motion"
 import { Heading, ProjectCard } from "../components/index"
 import {
   sectionMediaQueries,
@@ -28,7 +27,6 @@ const Projects = () => (
           >
             <ProjectCard
               name={project.name}
-              description={project.description}
               tools={project.tools}
               imgUrl={project.imgUrl}
               liveUrl={project.liveUrl}

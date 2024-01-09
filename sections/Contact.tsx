@@ -3,8 +3,6 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { motion } from "framer-motion"
-import { slideIn } from "@/utils/motion"
 import {
   sectionMediaQueries,
   sectionTopDivStyles,
@@ -44,7 +42,7 @@ const Contact = () => (
                 alt={flag.alt}
                 width={20}
                 height={20}
-                classname={flag.className}
+                classname="inline ml-1 w-[20px] h-[20px]"
               />
             ))}
           </p>

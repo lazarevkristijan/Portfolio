@@ -8,14 +8,12 @@ import { hoverStyles } from "@/constants"
 
 const ProjectCard = ({
   name,
-  description,
   tools,
   imgUrl,
   liveUrl,
   githubUrl,
 }: {
   name: string
-  description: string
   tools: string
   imgUrl: string
   liveUrl: string
@@ -63,7 +61,6 @@ const ProjectCard = ({
 
     {/* Details */}
     <p>{name}</p>
-    <p>{description}</p>
     <p>{tools}</p>
   </div>
 )

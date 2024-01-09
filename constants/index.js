@@ -48,14 +48,14 @@ export const projects = [
   {
     name: "rituale",
     description: "habits app",
-    tools: "react / ts / sql / photoshop / illustrator",
+    tools:
+      "react / ts / nodde.js / postgresql / jest / photoshop / illustrator",
     imgUrl: "/projectImages/ritualeProjectImage.jpg",
     liveUrl: "https://www.rituale.digital",
     githubUrl: "https://github.com/lazarevkristijan/rituale-app",
   },
   {
     name: "admin dashboard",
-    description: "iphone sales dashboard",
     tools: "react / ts / figma / photoshop / illustrator",
     imgUrl: "/projectImages/dashboardProjectImage.jpg",
     liveUrl: "https://iphone-sales-dashboard.vercel.app/",
@@ -63,7 +63,6 @@ export const projects = [
   },
   {
     name: "portfolio website",
-    description: `the one you're looking at now`,
     tools: "react / ts / next / figma / photoshop / illustrator",
     imgUrl: "/projectImages/thisProjectImage.png",
     liveUrl: "https://www.kristijanlazarev.com/",
@@ -71,7 +70,6 @@ export const projects = [
   },
   {
     name: "exotic exposure",
-    description: "luxury car website",
     tools: "html / css / js / photoshop",
     imgUrl: "/projectImages/exoticProjectImage.jpg",
     liveUrl: "https://exotic-exposure.onrender.com/",
@@ -206,27 +204,22 @@ export const flags = [
   {
     source: "/flags/us.svg",
     alt: "usa flag",
-    className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/de.svg",
     alt: "germany flag",
-    className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/mk.svg",
     alt: "macedonia flag",
-    className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/bg.svg",
     alt: "bulgaria flag",
-    className: "inline ml-1 w-[20px] h-[20px]",
   },
   {
     source: "/flags/rs.svg",
     alt: "serbia flag",
-    className: "inline ml-1 w-[20px] h-[20px]",
   },
 ]
 
@@ -260,21 +253,22 @@ export const workExperiences = [
     company: "alias",
     periodFrom: "oct 2023",
     periodTo: "present",
-    employmentType: "part time",
+    employmentType: "full time",
     location: "bulgaria, sofia",
     locationType: "remote",
-    skills: "wordpress, project management, business",
+    skills:
+      "react, typescript, node.js, postgresql, photoshop, illustrator, jest",
   },
   {
     title: "INFRASTRUCTURE ENGINEER",
     imgSrc: "kariox.png",
     company: "kariox",
     periodFrom: "oct 2023",
-    periodTo: "present",
-    employmentType: "part time",
+    periodTo: "jan 2024",
+    employmentType: "full time",
     location: "bulgaria, sofia",
     locationType: "remote",
-    skills: "web hosting, qa testing, infrastructure management",
+    skills: "html, css, js, web hosting, qa testing, infrastructure management",
   },
   {
     title: "UX/UI ANALYST",
@@ -285,8 +279,7 @@ export const workExperiences = [
     employmentType: "internship",
     location: "google meet",
     locationType: "remote",
-    skills:
-      "user experience (ux), user interface (ui), problem solving, communication",
+    skills: "UX, UI, problem solving, communication",
   },
   {
     title: "SALES AGENT",
