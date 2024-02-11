@@ -69,6 +69,13 @@ export const projects = [
     githubUrl: "https://github.com/lazarevkristijan/personal-next-js-portfolio",
   },
   {
+    name: "valentine invitation",
+    tools: "php / html / css / js",
+    imgUrl: "/projectImages/valentineProjectImage.jpg",
+    liveUrl: "https://valentine-invitation.vercel.app",
+    githubUrl: "https://github.com/lazarevkristijan/valentine-invitation",
+  },
+  {
     name: "exotic exposure",
     tools: "html / css / js / photoshop",
     imgUrl: "/projectImages/exoticProjectImage.jpg",
