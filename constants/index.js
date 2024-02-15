@@ -159,6 +159,15 @@ export const designSkills = [
 
 export const certifications = [
   {
+    name: "open source",
+    issuer: "ibm",
+    issueDate: "02/2024",
+    skillsLearnt: "open source / cloud computing / ai",
+    issuerLogo: "/otherImages/ibm.png",
+    linkToCertification:
+      "https://www.credly.com/badges/199bb343-5f09-4915-b287-e7b4b81c2458/public_url",
+  },
+  {
     name: "web development",
     issuer: "ibm",
     issueDate: "11/2023",
@@ -167,6 +176,7 @@ export const certifications = [
     linkToCertification:
       "https://www.credly.com/badges/cf037a67-4565-4ecb-a0d3-7addf95875b0/public_url",
   },
+
   {
     name: "the web developer bootcamp",
     issuer: "udemy",
@@ -184,15 +194,6 @@ export const certifications = [
     issuerLogo: "/otherImages/udemy.png",
     linkToCertification:
       "https://www.udemy.com/certificate/UC-8ccfeb90-84ac-42b7-882a-113efcd8bd4c/",
-  },
-  {
-    name: "management skills",
-    issuer: "udemy",
-    issueDate: "05/2023",
-    skillsLearnt: "problem solving",
-    issuerLogo: "/otherImages/udemy.png",
-    linkToCertification:
-      "https://www.udemy.com/certificate/UC-e103957c-c162-4f32-90c5-f8ff86b00b94/",
   },
 ]
 
@@ -255,7 +256,7 @@ export const workExperiences = [
     periodTo: "present",
     employmentType: "part time",
     location: "bulgaria, sofia",
-    locationType: "on site",
+    locationType: "remote",
     skills: "business, communication, software, hardware, software development",
   },
   {
