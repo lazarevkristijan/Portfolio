@@ -134,7 +134,11 @@ export const backEndSkills = [
   },
   {
     name: "php",
-    level: "w-4/5",
+    level: "w-3/5",
+  },
+  {
+    name: "python",
+    level: "w-3/5",
   },
 ]
 
