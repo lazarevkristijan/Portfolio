@@ -4,7 +4,7 @@ import React from "react"
 import Image from "next/image"
 import { Heading, SkillCard, CertificationCard } from "../components/index"
 import {
-  frontEndSkills,
+  programmingLanguages,
   backEndSkills,
   designSkills,
   certifications,
@@ -26,10 +26,10 @@ const Skills = () => (
       <div className="mt-[50px] flex flex-wrap">
         {/* Div for Front End skills */}
         <div className="w-1/3 h-fit lg:w-1/2 md:w-full">
-          <h3 className={`${skillsSubHeaderStyles}`}>FRONT END</h3>
+          <h3 className={`${skillsSubHeaderStyles}`}>LANGUAGES</h3>
           <div className="-mt-[20px]">
             {/* Mapping over Front End skills */}
-            {frontEndSkills.map((skill, index) => (
+            {programmingLanguages.map((skill, index) => (
               <SkillCard
                 name={skill.name}
                 level={skill.level}
@@ -41,7 +41,7 @@ const Skills = () => (
 
         {/* Div for Back End skills */}
         <div className="md:mt-[50px] w-1/3 h-fit lg:w-1/2 md:w-full">
-          <h3 className={`${skillsSubHeaderStyles}`}>BACK END</h3>
+          <h3 className={`${skillsSubHeaderStyles}`}>TOOLS</h3>
           <div className="-mt-[20px]">
             {/* Mapping over Back End Skills */}
             {backEndSkills.map((skill, index) => (

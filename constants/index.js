@@ -84,7 +84,7 @@ export const projects = [
   },
 ]
 
-export const frontEndSkills = [
+export const programmingLanguages = [
   {
     name: "html",
     level: "w-full",
@@ -98,23 +98,23 @@ export const frontEndSkills = [
     level: "w-full",
   },
   {
-    name: "react",
+    name: "typescript",
     level: "w-full",
   },
   {
-    name: "typescript",
+    name: "postgresql",
     level: "w-4/5",
   },
   {
-    name: "wordpress",
-    level: "w-4/5",
-  },
-  {
-    name: "react native",
+    name: "java",
     level: "w-3/5",
   },
   {
-    name: "jest",
+    name: "python",
+    level: "w-3/5",
+  },
+  {
+    name: "php",
     level: "w-3/5",
   },
 ]
@@ -129,15 +129,15 @@ export const backEndSkills = [
     level: "w-full",
   },
   {
-    name: "postgresql",
-    level: "w-4/5",
+    name: "react",
+    level: "w-full",
   },
   {
-    name: "php",
+    name: "react native",
     level: "w-3/5",
   },
   {
-    name: "python",
+    name: "jest",
     level: "w-3/5",
   },
 ]
