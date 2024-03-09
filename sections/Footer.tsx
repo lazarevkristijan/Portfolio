@@ -17,7 +17,7 @@ const Footer = () => {
     <div
       className={`text-[20px] mont smallCaps ${sectionTopDivStyles} pt-[50px]`}
     >
-      <div className={`xs:text-center ${sectionMediaQueries} xs:mt-[0]`}>
+      <div className={`md:text-center ${sectionMediaQueries} xs:mt-[0]`}>
         {/* Back to top */}
         <Link
           href="/"
@@ -28,13 +28,10 @@ const Footer = () => {
               section.scrollIntoView({ behavior: "smooth", block: "start" })
           }}
         >
-          <Button
-            title="back to top?"
-            margin="md:mx-auto"
-          />
+          <Button title="back to top?" />
         </Link>
         {/* Quote */}
-        <p className="leading-5 xs:mx-auto mt-[50px] w-[320px] sm:text-center">
+        <p className="leading-5 xs:mx-auto mt-[50px] w-[320px] sm:text-center md:mx-auto">
           it's not about who's the most talented, it's about who's the{" "}
           <span className="text-red-500 font-bold underline selection:bg-black">
             hungriest
