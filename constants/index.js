@@ -103,7 +103,7 @@ export const programmingLanguages = [
   },
   {
     name: "postgresql",
-    level: "w-4/5",
+    level: "w-full",
   },
   {
     name: "c++",
