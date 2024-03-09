@@ -106,7 +106,7 @@ export const programmingLanguages = [
     level: "w-4/5",
   },
   {
-    name: "C++",
+    name: "c++",
     level: "w-3/5",
   },
   {
