@@ -260,7 +260,7 @@ export const workExperiences = [
     periodTo: "present",
     employmentType: "part time",
     location: "bulgaria, sofia",
-    locationType: "remote",
+    locationType: "hybrid",
     skills: "business, communication, software, hardware, software development",
   },
   {
