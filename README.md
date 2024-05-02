@@ -1,5 +1,3 @@
-## PROJECT NO LONGER ACTIVE :(
-
 # The project consists of 5 main sections
 
 1. Hero
