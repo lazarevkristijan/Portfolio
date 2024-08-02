@@ -253,6 +253,17 @@ export const heroTags = [
 
 export const workExperiences = [
   {
+    title: "Co Founder",
+    imgSrc: "metamorphica.jpg",
+    company: "metamorphica digital",
+    periodFrom: "may 2023",
+    periodTo: "present",
+    employmentType: "freelance",
+    location: "bulgaria, sofia",
+    locationType: "remote",
+    skills: "business, marketing, web services, IT Support",
+  },
+  {
     title: "PHP Developer",
     imgSrc: "maximateam.jpg",
     company: "maximateam",
