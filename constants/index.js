@@ -253,6 +253,17 @@ export const heroTags = [
 
 export const workExperiences = [
   {
+    title: "PHP Developer",
+    imgSrc: "maximateam.jpg",
+    company: "maximateam",
+    periodFrom: "jul 2023",
+    periodTo: "present",
+    employmentType: "full time",
+    location: "bulgaria, sofia",
+    locationType: "on site",
+    skills: "business, php, full stack development, sql",
+  },
+  {
     title: "MENTEE",
     imgSrc: "ibmC.png",
     company: "ibm",
