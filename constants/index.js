@@ -264,7 +264,7 @@ export const workExperiences = [
     skills: "business, marketing, web services, IT Support",
   },
   {
-    title: "PHP Developer",
+    title: "Automation Engineer",
     imgSrc: "maximateam.jpg",
     company: "maximateam",
     periodFrom: "jul 2023",
